@@ -1,0 +1,5 @@
+name: astrbot_plugin_mika_group_glance
+desc: 未花·刷群——概率看一眼群消息，大模型自行判断回不回；不回则沉默。被唤醒后进入积极对话状态，由互动自然维持
+version: v0.2.1
+author: MisonoMika
+repo: local

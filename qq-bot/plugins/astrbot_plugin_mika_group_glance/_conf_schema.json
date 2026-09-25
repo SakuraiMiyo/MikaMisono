@@ -1,0 +1,73 @@
+{
+  "glance_probability": {
+    "description": "看一眼概率：每条群消息触发「审视」的概率",
+    "type": "float",
+    "hint": "0.03 = 平均每 33 条看一眼。每次看一眼都会消耗一次判断调用的 token",
+    "default": 0.03
+  },
+  "window_size": {
+    "description": "判断时带给模型的最近消息条数",
+    "type": "int",
+    "default": 12
+  },
+  "cooldown_minutes": {
+    "description": "冷却（分钟）：看过一次后，同群多久内不再看",
+    "type": "int",
+    "default": 20
+  },
+  "daily_reply_limit": {
+    "description": "每日回复上限：判断为「回」并实际回复的次数/天/群",
+    "type": "int",
+    "default": 5
+  },
+  "quiet_start_hour": {
+    "description": "免扰开始小时（0-23，含）",
+    "type": "int",
+    "default": 1
+  },
+  "quiet_end_hour": {
+    "description": "免扰结束小时（0-23，不含；到达该小时恢复）",
+    "type": "int",
+    "default": 8
+  },
+  "patience_shrink_after": {
+    "description": "连续 N 次「不回」后采样概率减半（巡逻衰减，最低降到基础概率的 1/4）",
+    "type": "int",
+    "default": 3
+  },
+  "engaged_reply_probability": {
+    "description": "积极状态接话概率（会乘以当前 engagement 衰减值）",
+    "type": "float",
+    "default": 0.75
+  },
+  "engaged_half_life_minutes": {
+    "description": "积极状态半衰期（分钟）：没人说话每隔这么多分钟热度减半，自然滑回等候判断",
+    "type": "int",
+    "default": 8
+  },
+  "engaged_min_reply_interval_seconds": {
+    "description": "积极状态下两次回复的最小间隔（秒），防连发",
+    "type": "int",
+    "default": 15
+  },
+  "engaged_daily_limit": {
+    "description": "积极状态每日回复上限（次/群）",
+    "type": "int",
+    "default": 20
+  },
+  "engaged_max_hours": {
+    "description": "积极状态硬上限（小时）——极端保护，正常靠半衰期自然退出",
+    "type": "float",
+    "default": 3.0
+  },
+  "enabled_groups": {
+    "description": "启用的群号白名单",
+    "type": "list",
+    "default": ["826918308"]
+  },
+  "judge_prompt_extra": {
+    "description": "判断提示词的附加要求（追加在末尾）",
+    "type": "string",
+    "default": ""
+  }
+}
