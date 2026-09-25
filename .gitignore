@@ -13,3 +13,6 @@ assets/blue-archive/
 
 # 向量索引可重建（agent/memory/index 由 tools/index.mjs 生成）
 # ——保留还是忽略见 README 15 节讨论；先入库做备份
+
+# 部署密钥（快照脚本拆出，换机手动拷，绝不入库）
+deploy/secrets.local.json

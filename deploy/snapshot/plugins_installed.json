@@ -1,0 +1,356 @@
+[
+  {
+    "name": "anime_gacha",
+    "enabled": null,
+    "version": "v1.1.4",
+    "repo": "https://github.com/xco2/astrbot_plugin_anime_gacha"
+  },
+  {
+    "name": "antipromptinjector",
+    "enabled": null,
+    "version": "v3.5.1",
+    "repo": "https://github.com/oyxning/astrbot_plugin_antipromptinjector"
+  },
+  {
+    "name": "astrbot_plugin_anysearch",
+    "enabled": null,
+    "version": "v0.2.0",
+    "repo": "https://github.com/AgIzT/astrbot_plugin_anysearch"
+  },
+  {
+    "name": "astrbot_plugin_Astronomy_Picture_of_the_Day",
+    "enabled": null,
+    "version": "v0.0.1",
+    "repo": "https://github.com/Cysheper/astrbot_plugin_Astronomy_Picture_of_the_Day-APOD"
+  },
+  {
+    "name": "astrbot_plugin_babirthday",
+    "enabled": null,
+    "version": "v1.2.3",
+    "repo": "https://github.com/laopanmemz/astrbot_plugin_babirthday"
+  },
+  {
+    "name": "astrbot_plugin_bilibiliobs",
+    "enabled": null,
+    "version": "1.0.0",
+    "repo": "https://github.com/BB0813/astrbot_plugin_bilibiliobs"
+  },
+  {
+    "name": "astrbot_plugin_bilivideo",
+    "enabled": null,
+    "version": "v2.0.0",
+    "repo": "https://github.com/storyAura/astrbot_plugin_biliVideo"
+  },
+  {
+    "name": "astrbot_plugin_bili_daily_report",
+    "enabled": null,
+    "version": "v0.0.4",
+    "repo": "https://github.com/MomijiOXO/astrbot_plugin_HD2_daily_report"
+  },
+  {
+    "name": "astrbot_plugin_bw_monitor",
+    "enabled": null,
+    "version": "v1.0",
+    "repo": "https://github.com/satori5555/astrbot_plugin_bw_monitor"
+  },
+  {
+    "name": "astrbot_plugin_cet6",
+    "enabled": null,
+    "version": "5.5.0",
+    "repo": "https://github.com/202704948-design/astrbot_plugin_cet6"
+  },
+  {
+    "name": "astrbot_plugin_comfyui_hub",
+    "enabled": null,
+    "version": "v1.2.1",
+    "repo": "https://github.com/ReallyChooseC/astrbot_plugin_comfyui_hub"
+  },
+  {
+    "name": "astrbot_plugin_dailyhub",
+    "enabled": null,
+    "version": "v0.2.1",
+    "repo": "https://github.com/AMag1c/astrbot_plugin_dailyhub"
+  },
+  {
+    "name": "astrbot_plugin_daily_ai_news",
+    "enabled": null,
+    "version": "1.02",
+    "repo": "https://github.com/xxofficial/astrbot_plugin_daily_ai_news"
+  },
+  {
+    "name": "astrbot_plugin_deer_check",
+    "enabled": null,
+    "version": "v1.5.1",
+    "repo": "https://github.com/DITF16/astrbot_plugin_deer_check"
+  },
+  {
+    "name": "astrbot_plugin_disaster_warning",
+    "enabled": null,
+    "version": "v1.5.2",
+    "repo": "https://github.com/DBJD-CR/astrbot_plugin_disaster_warning"
+  },
+  {
+    "name": "astrbot_plugin_echoscore",
+    "enabled": null,
+    "version": "3.1.5",
+    "repo": "https://github.com/timetetng/astrbot_plugin_echoscore"
+  },
+  {
+    "name": "astrbot_plugin_essential",
+    "enabled": null,
+    "version": "v1.1.0",
+    "repo": "https://github.com/Soulter/astrbot_plugin_essential"
+  },
+  {
+    "name": "astrbot_plugin_furry_zan",
+    "enabled": null,
+    "version": "v1.3.0",
+    "repo": "https://github.com/furry520-source/astrbot_plugin_furry_zan"
+  },
+  {
+    "name": "astrbot_plugin_galgame_box",
+    "enabled": null,
+    "version": "v1.12.3",
+    "repo": "https://github.com/PyuraMazo/astrbot_plugin_galgame_box"
+  },
+  {
+    "name": "astrbot_plugin_github_cards",
+    "enabled": null,
+    "version": "1.1.1",
+    "repo": "https://github.com/Soulter/astrbot_plugin_github_cards"
+  },
+  {
+    "name": "astrbot_plugin_group_llm_guard",
+    "enabled": null,
+    "version": "1.0.0",
+    "repo": "https://github.com/cgefw/astrbot_plugin_group_llm_guard"
+  },
+  {
+    "name": "astrbot_plugin_group_signin",
+    "enabled": null,
+    "version": "v1.1",
+    "repo": "https://github.com/Foolllll-J/astrbot_plugin_group_signin"
+  },
+  {
+    "name": "astrbot_plugin_group_welcome",
+    "enabled": null,
+    "version": "2.3.0",
+    "repo": "https://github.com/lingyun14beta/astrbot_plugin_group_welcome"
+  },
+  {
+    "name": "astrbot_plugin_gscore_adapter",
+    "enabled": null,
+    "version": "v0.5.0",
+    "repo": "https://github.com/KimigaiiWuyi/astrbot_plugin_gscore_adapter"
+  },
+  {
+    "name": "astrbot_plugin_hapi_connector",
+    "enabled": null,
+    "version": "v2.1.4",
+    "repo": "https://github.com/LiJinHao999/astrbot_plugin_hapi_connector"
+  },
+  {
+    "name": "astrbot_plugin_help_typst",
+    "enabled": null,
+    "version": "v0.1.1",
+    "repo": "https://github.com/bylkuse/astrbot_plugin_help_typst"
+  },
+  {
+    "name": "astrbot_plugin_iris_chat_memory",
+    "enabled": null,
+    "version": "0.1.1",
+    "repo": "https://github.com/Leafliber/astrbot_plugin_iris_chat_memory"
+  },
+  {
+    "name": "astrbot_plugin_mudae_qq",
+    "enabled": null,
+    "version": "v2.3.2",
+    "repo": "https://github.com/kennylimz/astrbot_plugin_mudae_qq"
+  },
+  {
+    "name": "astrbot_plugin_music",
+    "enabled": null,
+    "version": "v2.1.1",
+    "repo": "https://github.com/Zhalslar/astrbot_plugin_music"
+  },
+  {
+    "name": "astrbot_plugin_parser",
+    "enabled": null,
+    "version": "v1.5.1",
+    "repo": "https://github.com/Zhalslar/astrbot_plugin_parser"
+  },
+  {
+    "name": "astrbot_plugin_pokepro",
+    "enabled": null,
+    "version": "v2.1.0",
+    "repo": "https://github.com/Zhalslar/astrbot_plugin_pokepro"
+  },
+  {
+    "name": "astrbot_plugin_poke_to_llm",
+    "enabled": null,
+    "version": "2.2.0",
+    "repo": "https://github.com/muyouzhi6/astrbot_plugin_poke_to_llm"
+  },
+  {
+    "name": "astrbot_plugin_private_companion",
+    "enabled": null,
+    "version": "6.6.2",
+    "repo": "https://github.com/menglimi/astrbot_plugin_private_companion"
+  },
+  {
+    "name": "astrbot_plugin_proactive_chat",
+    "enabled": null,
+    "version": "v1.2.4",
+    "repo": "https://github.com/DBJD-CR/astrbot_plugin_proactive_chat"
+  },
+  {
+    "name": "astrbot_plugin_qna",
+    "enabled": null,
+    "version": "v1.1.10",
+    "repo": "https://github.com/zouyonghe/astrbot_plugin_qna"
+  },
+  {
+    "name": "astrbot_plugin_qqadmin",
+    "enabled": null,
+    "version": "v3.3.0",
+    "repo": "https://github.com/Zhalslar/astrbot_plugin_qqadmin"
+  },
+  {
+    "name": "astrbot_plugin_qzone",
+    "enabled": null,
+    "version": "v3.1.0",
+    "repo": "https://github.com/Zhalslar/astrbot_plugin_qzone"
+  },
+  {
+    "name": "astrbot_plugin_qzone_tools",
+    "enabled": null,
+    "version": "5.0.6",
+    "repo": "https://github.com/Wyccotccy/astrbot_plugin_qzone_tools"
+  },
+  {
+    "name": "astrbot_plugin_remove_blank_lines",
+    "enabled": null,
+    "version": "v1.0.0",
+    "repo": ""
+  },
+  {
+    "name": "astrbot_plugin_reread",
+    "enabled": null,
+    "version": "v2.0.0",
+    "repo": "https://github.com/Zhalslar/astrbot_plugin_reread"
+  },
+  {
+    "name": "astrbot_plugin_robomaster_assistant",
+    "enabled": null,
+    "version": "0.9.0",
+    "repo": "https://github.com/CUBOT-robomaster/astrbot_plugin_robomaster_assistant"
+  },
+  {
+    "name": "astrbot_plugin_serpapi_imgsearch",
+    "enabled": null,
+    "version": "1.0.2",
+    "repo": "https://github.com/monbed/astrbot_plugin_serpapi_imgsearch"
+  },
+  {
+    "name": "astrbot_plugin_shit_detector_plus",
+    "enabled": null,
+    "version": "1.1.6",
+    "repo": "https://github.com/Sisyphbaous-DT-Project/astrbot_plugin_shit_detector_plus"
+  },
+  {
+    "name": "astrbot_plugin_stealer",
+    "enabled": null,
+    "version": "2.6.14",
+    "repo": "https://github.com/nagatoquin33/astrbot_plugin_stealer"
+  },
+  {
+    "name": "astrbot_plugin_tattle",
+    "enabled": null,
+    "version": "v1.0.0",
+    "repo": "https://github.com/AlanBacker/astrbot_plugin_tattle"
+  },
+  {
+    "name": "astrbot_plugin_uapipro_toolbox",
+    "enabled": null,
+    "version": "3.0.0",
+    "repo": "https://github.com/lingyun14beta/astrbot_plugin_uapipro_toolbox"
+  },
+  {
+    "name": "astrbot_plugin_VisiStat",
+    "enabled": null,
+    "version": "v2.0.0",
+    "repo": "https://github.com/Rentz412/astrbot_plugin_VisiStat"
+  },
+  {
+    "name": "astrbot_plugin_what_to_eat",
+    "enabled": null,
+    "version": "1.3.0_beta1",
+    "repo": "https://github.com/Sisyphbaous-DT-Project/astrbot_plugin_what_to_eat"
+  },
+  {
+    "name": "astrbot_plugin_wifepicker",
+    "enabled": null,
+    "version": "v3.2.6",
+    "repo": "https://github.com/Heximiao/astrbot-plugin-wifepicker"
+  },
+  {
+    "name": "astrbot_plugin_yt-dlp",
+    "enabled": null,
+    "version": "1.0.1",
+    "repo": "https://github.com/204343414/astrbot_plugin_yt-dlp"
+  },
+  {
+    "name": "blue_archive",
+    "enabled": null,
+    "version": "v1.0",
+    "repo": "https://github.com/anka-afk/astrbot_plugin_blue_archive"
+  },
+  {
+    "name": "meme_manager",
+    "enabled": null,
+    "version": "v3.20",
+    "repo": "https://github.com/anka-afk/astrbot_plugin_meme_manager"
+  },
+  {
+    "name": "mika_voice_tool",
+    "enabled": null,
+    "version": "1.0.0",
+    "repo": ""
+  },
+  {
+    "name": "spectrecore",
+    "enabled": null,
+    "version": "v2.1.12",
+    "repo": "https://github.com/23q3/astrbot_plugin_SpectreCore"
+  },
+  {
+    "name": "steam_status_monitor_V2",
+    "enabled": null,
+    "version": "2.2.0",
+    "repo": "https://github.com/Maoer233/astrbot_plugin_steam_status_monitor"
+  },
+  {
+    "name": "astrbot_plugin_yunrun",
+    "enabled": null,
+    "version": "3.0.0",
+    "repo": ""
+  },
+  {
+    "name": "多模态临时路由",
+    "enabled": null,
+    "version": "v1.1.0",
+    "repo": "https://github.com/Rinyin/astrbot_plugin_multimodal_router"
+  },
+  {
+    "name": "astrbot",
+    "enabled": null,
+    "version": "4.4.0",
+    "repo": ""
+  },
+  {
+    "name": "builtin_commands",
+    "enabled": null,
+    "version": "0.0.1",
+    "repo": ""
+  }
+]

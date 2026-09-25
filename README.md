@@ -1225,6 +1225,10 @@ $BAK = 'C:\OneDrive\MikaMisono\_archive-20260924\cards-before-voicefix-20260926-
 
 ## 十四、日常操作手册
 
+> **换机/重装部署 → 直接看 [`docs/部署手册.md`](docs/部署手册.md)(AI 执行版,配套 `deploy/` 三脚本)。**
+> 旧机定期跑 `deploy\snapshot_machine.py` 刷新快照(技能/EXTRA_PROMPT/配置/人格/插件),
+> 密钥在 `deploy/secrets.local.json`(已 gitignore,换机手动拷)。
+
 ### 14.1 改 QQ 提示词
 
 ```powershell
