@@ -1,0 +1,156 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789302757509,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\TC264-Learning"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 159447,
+        "val": {
+          "turns": 8,
+          "steps": 221,
+          "llmMs": 1067355,
+          "toolMs": 1299492,
+          "ttftMs": 426052,
+          "ttftSteps": 221,
+          "decodeMs": 641303,
+          "decodeTokens": 165773,
+          "lastTurn": 8,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 159447,
+        "val": "TC264智能车竞赛环境搭建"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 159447,
+        "val": {
+          "goal": {
+            "id": "goal-7f05a190-a283-4036-a2f5-4674ad01965d",
+            "revision": 2,
+            "objective": "参考 D:\\OneDrive\\ComputerLearning\\STM32HAL\\学习笔记 的组织框架，重构 TC264-Learning/TC264Notes 的 15 篇笔记：新增 README 导航门户页；统一各章标题为「NN · 标题」格式；每章补充勾选式自测清单（- [ ]）与统一格式的避坑指南表格（现象/原因/解决办法）；同时充实各章内容。保留 TC264 原有的术语速通、逐段代码拆解、代码溯源优点的同时，向 STM32 笔记的框架看齐。不配图。全部改动需通过 wikilink 完整性校验后提交 git。",
+            "phase": "complete",
+            "maxGoalRounds": 256
+          },
+          "roundsStarted": 1,
+          "createdAt": 1789366179904,
+          "updatedAt": 1789366432811
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 159447,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 247084,
+            "outputTokens": 165773,
+            "cacheReadTokens": 44837632,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 8,
+            "step": 27,
+            "buckets": {
+              "uncachedInputTokens": 240,
+              "outputTokens": 1481,
+              "cacheReadTokens": 380032,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 159447,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 380272,
+          "surfaceTokens": 231181,
+          "sampledSurfaceTokens": 230303
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 159447,
+        "val": {
+          "systemTokens": 2997,
+          "toolsTokens": 6830,
+          "messageTokens": 231181
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 159447,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 159447,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 159447,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 159447,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 159447,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4.1-flash-expires-on-0910",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 159447,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789380194527
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 159447,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 159447,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 159447,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

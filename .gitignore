@@ -1,0 +1,15 @@
+# Python 运行产物
+__pycache__/
+*.pyc
+*.pyo
+
+# DSH 记忆引擎的依赖与模型缓存（可重建：node tools/index.mjs）
+agent/node_modules/
+agent/.cache/
+
+# 碧蓝档案素材提取工具是独立 git 仓库（含 >50MB 的 dump.cs，GitHub 不收）
+# 需要时单独克隆，见 assets/blue-archive 内的说明
+assets/blue-archive/
+
+# 向量索引可重建（agent/memory/index 由 tools/index.mjs 生成）
+# ——保留还是忽略见 README 15 节讨论；先入库做备份

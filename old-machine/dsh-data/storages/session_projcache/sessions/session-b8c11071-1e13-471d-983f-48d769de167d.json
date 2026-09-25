@@ -1,0 +1,145 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1790057189630,
+      "cwd": "D:\\OneDrive\\大学课程学习\\认识实习\\软件方向\\0922表格2"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 284193,
+        "val": {
+          "turns": 7,
+          "steps": 145,
+          "llmMs": 1507766,
+          "toolMs": 2145796,
+          "ttftMs": 406163,
+          "ttftSteps": 144,
+          "decodeMs": 1101603,
+          "decodeTokens": 290074,
+          "lastTurn": 7,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 284193,
+        "val": "班级成绩统计分析表制作"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 284193,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 284193,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 125310,
+            "outputTokens": 290074,
+            "cacheReadTokens": 27852928,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 7,
+            "step": 25,
+            "buckets": {
+              "uncachedInputTokens": 2521,
+              "outputTokens": 1458,
+              "cacheReadTokens": 382464,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 284193,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 384985,
+          "surfaceTokens": 245797,
+          "sampledSurfaceTokens": 245038
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 284193,
+        "val": {
+          "systemTokens": 2994,
+          "toolsTokens": 6830,
+          "messageTokens": 245797
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 284193,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 284193,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 284193,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 284193,
+        "val": {
+          "preset": "danger-full-access",
+          "sandbox": "danger-full-access",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 284193,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 284193,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1790061793299
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 284193,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 284193,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 284193,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

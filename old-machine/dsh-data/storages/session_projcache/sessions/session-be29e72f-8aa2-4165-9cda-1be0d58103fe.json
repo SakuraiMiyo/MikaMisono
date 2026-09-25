@@ -1,0 +1,145 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789476544404,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\PCB_Design"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 111584,
+        "val": {
+          "turns": 2,
+          "steps": 86,
+          "llmMs": 623265,
+          "toolMs": 39072,
+          "ttftMs": 138990,
+          "ttftSteps": 86,
+          "decodeMs": 484275,
+          "decodeTokens": 114905,
+          "lastTurn": 2,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 111584,
+        "val": "根据PPT整理扩展学习笔记"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 111584,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 111584,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 104909,
+            "outputTokens": 114905,
+            "cacheReadTokens": 10109056,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 2,
+            "step": 23,
+            "buckets": {
+              "uncachedInputTokens": 193,
+              "outputTokens": 985,
+              "cacheReadTokens": 203264,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 111584,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 203457,
+          "surfaceTokens": 99352,
+          "sampledSurfaceTokens": 98804
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 111584,
+        "val": {
+          "systemTokens": 2994,
+          "toolsTokens": 6830,
+          "messageTokens": 99352
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 111584,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 111584,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 111584,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 111584,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 111584,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 111584,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789477327754
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 111584,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 111584,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 111584,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+# ⚠️ 已废弃（2026-09-24）——不要运行。保留仅作历史记录。
+# 这是最早那台机器上的一次性自举脚本：它会杀掉 DSH Desktop、改 profile 的 package.json，
+# 并安装已删除的 mika-watch-boot 插件与记忆守护。现在唯一的管理入口是：
+#   C:\OneDrive\MikaMisono\scripts\deploy_mika.ps1
+$ErrorActionPreference = 'Continue'
+$log = 'C:\OneDrive\MikaMisono\mika-chat\setup-dsh.log'
+function Log($msg) {
+    $line = "[{0}] {1}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $msg
+    Add-Content -Path $log -Value $line -Encoding UTF8
+}
+Set-Content -Path $log -Value '' -Encoding UTF8
+Log 'setup start'
+
+Start-Sleep -Seconds 3
+
+$procs = @(Get-Process -Name 'DSH Desktop' -ErrorAction SilentlyContinue)
+Log ("DSH process count: " + $procs.Count)
+foreach ($p in $procs) {
+    try {
+        Stop-Process -Id $p.Id -Force -ErrorAction Stop
+        Log ("killed " + $p.Id)
+    } catch {
+        Log ("failed to kill " + $p.Id + ": " + $_.Exception.Message)
+    }
+}
+
+$deadline = (Get-Date).AddMinutes(3)
+while (@(Get-Process -Name 'DSH Desktop' -ErrorAction SilentlyContinue).Count -gt 0) {
+    if ((Get-Date) -gt $deadline) {
+        Log 'timeout waiting for DSH Desktop to exit'
+        break
+    }
+    Start-Sleep -Seconds 1
+}
+Log 'DSH Desktop exit wait finished'
+
+$profileDir = 'C:\Users\MisonoMika\.dsh\profiles\desktop'
+$deadline = (Get-Date).AddMinutes(2)
+$ready = $false
+while (-not $ready) {
+    try {
+        $probe = Join-Path $profileDir ("_probe_" + [guid]::NewGuid().ToString('N') + '.tmp')
+        Set-Content -Path $probe -Value 'x' -ErrorAction Stop
+        Remove-Item -Path $probe -Force
+        $ready = $true
+    } catch {
+        if ((Get-Date) -gt $deadline) {
+            Log 'timeout waiting for profile dir to become writable'
+            break
+        }
+        Start-Sleep -Seconds 1
+    }
+}
+Log ("profile writable: " + $ready)
+
+$node = 'C:\SoftWare\Node\node.exe'
+$env:PATH = 'C:\Users\MisonoMika\AppData\Roaming\DSH Desktop\runtime-commands\bin;C:\Users\MisonoMika\AppData\Roaming\DSH Desktop\host-commands\desktop\bin;' + $env:PATH
+$env:DSH_HOME = 'C:\Users\MisonoMika\.dsh'
+
+if ($ready) {
+    # 1) Generate global persona patch for desktop profile
+    Log 'generating persona patch...'
+    & $node 'C:\OneDrive\MikaMisono\mika-chat\tools\gen-persona-patch.mjs' --home 'C:\Users\MisonoMika\.dsh' --profile desktop 2>&1 | ForEach-Object { Log $_ }
+    Log ("gen-persona exit code: " + $LASTEXITCODE)
+
+    # 2) Disable standard preset persona so global persona takes effect
+    $presetFile = 'C:\Users\MisonoMika\.dsh\profiles\node_modules\@deepseek-ai\dsh-agent-presets\presets\standard\agent.cordis.yml'
+    if (Test-Path $presetFile) {
+        $text = [System.IO.File]::ReadAllText($presetFile, [System.Text.Encoding]::UTF8)
+        if ($text -notmatch '(?m)^- id: persona\s*\r?\n  disabled: true') {
+            $newText = [regex]::Replace($text, '(?m)^(- id: persona)(\r?\n)', '$1  disabled: true$2')
+            [System.IO.File]::WriteAllText($presetFile, $newText, (New-Object System.Text.UTF8Encoding $false))
+            Log 'standard preset persona disabled'
+        } else {
+            Log 'standard preset persona already disabled'
+        }
+    } else {
+        Log "preset file not found: $presetFile"
+    }
+
+    # 3) Add mika-watch-boot plugin to desktop profile package.json
+    $desktopPkg = Join-Path $profileDir 'package.json'
+    $pkg = Get-Content -Raw $desktopPkg | ConvertFrom-Json
+    $depName = 'mika-watch-boot'
+    $depValue = 'link:C:/OneDrive/MikaMisono/mika-chat/plugins/mika-watch-boot'
+    if ($null -eq $pkg.dependencies.$depName) {
+        $pkg.dependencies | Add-Member -NotePropertyName $depName -NotePropertyValue $depValue -Force
+        Log "added dependency $depName"
+    } else {
+        Log "dependency $depName already present"
+    }
+    $bundles = @($pkg.dsh.profile.bundles)
+    if ($bundles -notcontains $depName) {
+        $pkg.dsh.profile.bundles += $depName
+        Log "added bundle $depName"
+    } else {
+        Log "bundle $depName already present"
+    }
+    $pkg | ConvertTo-Json -Depth 10 | Set-Content -Path $desktopPkg -Encoding UTF8
+    Log 'desktop package.json updated'
+
+    # 4) Run pnpm install in desktop profile to materialize mika-watch-boot
+    Log 'running pnpm install...'
+    Push-Location $profileDir
+    try {
+        & $node 'C:\Users\MisonoMika\.dsh\profiles\node_modules\pnpm\bin\pnpm.cjs' install 2>&1 | ForEach-Object { Log $_ }
+        Log ("pnpm install exit code: " + $LASTEXITCODE)
+    } finally {
+        Pop-Location
+    }
+
+    if (Test-Path 'C:\Users\MisonoMika\.dsh\profiles\desktop\node_modules\mika-watch-boot') {
+        Log 'mika-watch-boot installed in desktop profile'
+    } else {
+        Log 'mika-watch-boot NOT found after install'
+    }
+} else {
+    Log 'profile not writable, skipped DSH modifications'
+}
+
+Start-Process -FilePath 'C:\SoftWare\DeepSeekHarnessDesktop\DSH Desktop\DSH Desktop.exe'
+Log 'restart requested'

@@ -1,0 +1,28 @@
+{
+  "embedding": {
+    "engine": "transformers",
+    "model": "Xenova/multilingual-e5-small",
+    "remoteHost": "https://hf-mirror.com",
+    "dims": 384,
+    "queryPrefix": "query: ",
+    "passagePrefix": "passage: "
+  },
+  "index": {
+    "root": "memory/index",
+    "chunkMaxChars": 600,
+    "chunkOverlapChars": 80
+  },
+  "sources": {
+    "knowledge": "knowledge",
+    "diary": "memory/diary",
+    "cards": "memory/cards",
+    "summaries": "memory/summaries",
+    "exclude": ["trivia-unverified.md"]
+  },
+  "digest": {
+    "credentialsFile": null,
+    "apiBase": "https://api.deepseek.com/chat/completions",
+    "model": "deepseek-chat",
+    "maxRetries": 2
+  }
+}

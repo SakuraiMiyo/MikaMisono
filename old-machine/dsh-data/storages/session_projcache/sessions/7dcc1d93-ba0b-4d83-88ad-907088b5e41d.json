@@ -1,0 +1,176 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789819054936,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\STC"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 59139,
+        "val": {
+          "turns": 1,
+          "steps": 46,
+          "llmMs": 245697,
+          "toolMs": 7736,
+          "ttftMs": 48217,
+          "ttftSteps": 46,
+          "decodeMs": 197480,
+          "decodeTokens": 60994,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 59139,
+        "val": "你是嵌入式 C 代码分析助手。"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 59139,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 59139,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 162436,
+            "outputTokens": 60994,
+            "cacheReadTokens": 4769664,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 46,
+            "buckets": {
+              "uncachedInputTokens": 203,
+              "outputTokens": 103,
+              "cacheReadTokens": 189440,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 59139,
+        "val": {
+          "surfaceTokens": 121971,
+          "contextWindow": 1000000,
+          "pressureTokens": 189643,
+          "sampledSurfaceTokens": 121906
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 59139,
+        "val": {
+          "systemTokens": 3097,
+          "toolsTokens": 7020,
+          "messageTokens": 121971
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 59139,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 254601
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 59139,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Library API cheat sheet",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 59139,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 59139,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 59139,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 59139,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789819055067
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 59139,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 59139,
+        "val": [
+          {
+            "content": "Convert GBK sources to UTF-8 scratch copies",
+            "status": "completed"
+          },
+          {
+            "content": "Read zf_common headers + key .c",
+            "status": "in_progress"
+          },
+          {
+            "content": "Read zf_driver headers + init enums",
+            "status": "pending"
+          },
+          {
+            "content": "Read zf_device headers",
+            "status": "pending"
+          },
+          {
+            "content": "Read seekfree_assistant + USB lib",
+            "status": "pending"
+          },
+          {
+            "content": "Write 03_library_api.md",
+            "status": "pending"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 59139,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

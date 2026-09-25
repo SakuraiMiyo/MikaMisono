@@ -1,0 +1,145 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788783029744,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 128640,
+        "val": {
+          "turns": 5,
+          "steps": 82,
+          "llmMs": 1062212,
+          "toolMs": 5434988,
+          "ttftMs": 97403,
+          "ttftSteps": 82,
+          "decodeMs": 964809,
+          "decodeTokens": 132173,
+          "lastTurn": 5,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 128640,
+        "val": "整理TC264学习笔记并同步仓库"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 128640,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 128640,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 126301,
+            "outputTokens": 132173,
+            "cacheReadTokens": 11794304,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 5,
+            "step": 18,
+            "buckets": {
+              "uncachedInputTokens": 106,
+              "outputTokens": 1023,
+              "cacheReadTokens": 230656,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 128640,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 230762,
+          "surfaceTokens": 147968,
+          "sampledSurfaceTokens": 147361
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 128640,
+        "val": {
+          "systemTokens": 2988,
+          "toolsTokens": 6830,
+          "messageTokens": 147968
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 128640,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 128640,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 128640,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 128640,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 128640,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 128640,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786676539
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 128640,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 128640,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 128640,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

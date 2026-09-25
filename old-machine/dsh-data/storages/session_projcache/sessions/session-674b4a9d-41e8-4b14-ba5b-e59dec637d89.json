@@ -1,0 +1,145 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789365704694,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\TC264-Learning"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 393684,
+        "val": {
+          "turns": 34,
+          "steps": 271,
+          "llmMs": 2479034,
+          "toolMs": 964341,
+          "ttftMs": 893018,
+          "ttftSteps": 271,
+          "decodeMs": 1581456,
+          "decodeTokens": 399264,
+          "lastTurn": 34,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 393684,
+        "val": "实验课交付清单"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 393684,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 393684,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 219948,
+            "outputTokens": 399264,
+            "cacheReadTokens": 79955840,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 34,
+            "step": 16,
+            "buckets": {
+              "uncachedInputTokens": 146,
+              "outputTokens": 813,
+              "cacheReadTokens": 571392,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 393684,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 571538,
+          "surfaceTokens": 376768,
+          "sampledSurfaceTokens": 376415
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 393684,
+        "val": {
+          "systemTokens": 2995,
+          "toolsTokens": 6830,
+          "messageTokens": 376768
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 393684,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 393684,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 393684,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 393684,
+        "val": {
+          "preset": "danger-full-access",
+          "sandbox": "danger-full-access",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 393684,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 393684,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789374658978
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 393684,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 393684,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 393684,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788929363506,
+      "cwd": "D:\\OneDrive\\碧蓝档案\\总力战\\BAMT"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 14481,
+        "val": {
+          "turns": 2,
+          "steps": 25,
+          "llmMs": 64655,
+          "toolMs": 15690,
+          "ttftMs": 12783,
+          "ttftSteps": 26,
+          "decodeMs": 51560,
+          "decodeTokens": 15336,
+          "lastTurn": 2,
+          "openStep": null,
+          "pendingCalls": {
+            "call_00_o4E9wERVSXuYouHEAFW49175": 1788929612539
+          }
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 14481,
+        "val": "审视项目请求"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 14481,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 14481,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 77893,
+            "outputTokens": 15336,
+            "cacheReadTokens": 1136896,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 2,
+            "step": 10,
+            "buckets": {
+              "uncachedInputTokens": 11744,
+              "outputTokens": 701,
+              "cacheReadTokens": 76288,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 14481,
+        "val": {
+          "surfaceTokens": 48638,
+          "contextWindow": 1000000,
+          "pressureTokens": 88032,
+          "sampledSurfaceTokens": 47958
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 14481,
+        "val": {
+          "systemTokens": 2993,
+          "toolsTokens": 6830,
+          "messageTokens": 48638
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 14481,
+        "val": {
+          "descriptorSeen": false,
+          "settledMs": 0,
+          "pendingTurnStart": 1788929583364
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 14481,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 14481,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 14481,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 14481,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4.1-flash-expires-on-0910",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 14481,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788929410861
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 14481,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 14481,
+        "val": [
+          {
+            "content": "扫描项目结构、构建配置与仓库卫生状况",
+            "status": "completed"
+          },
+          {
+            "content": "审查 Rust 后端 main.rs（87KB，零依赖）",
+            "status": "completed"
+          },
+          {
+            "content": "审查 TimelineCostTracks.tsx（181KB 巨型组件）",
+            "status": "completed"
+          },
+          {
+            "content": "审查 App.tsx / TimelinePlanner.tsx 状态与渲染逻辑",
+            "status": "in_progress"
+          },
+          {
+            "content": "审查 dsl.ts / config.ts / 数据层与脚本工具",
+            "status": "in_progress"
+          },
+          {
+            "content": "验证 typecheck / build / 仓库卫生",
+            "status": "in_progress"
+          },
+          {
+            "content": "汇总为一份未花风格的审视报告",
+            "status": "pending"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 14481,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

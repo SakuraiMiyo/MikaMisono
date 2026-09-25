@@ -1,0 +1,156 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789971155576,
+      "cwd": "D:\\OneDrive\\大学课程学习\\认识实习\\软件方向"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 224133,
+        "val": {
+          "turns": 13,
+          "steps": 139,
+          "llmMs": 1685823,
+          "toolMs": 689068,
+          "ttftMs": 567184,
+          "ttftSteps": 137,
+          "decodeMs": 1118639,
+          "decodeTokens": 219093,
+          "lastTurn": 13,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 224133,
+        "val": "查看工作区文档要求"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 224133,
+        "val": {
+          "goal": {
+            "id": "goal-a1e4d61d-54a3-452e-ae45-c43c367bab8e",
+            "revision": 2,
+            "objective": "完成安徽理工大学2025级认识实习（软件方向）实习一作业：产出一份主题为「人工智能对软件工程专业就业的影响」的调研报告 .docx 文件，内容不少于3000字，且完全满足实习指导书的结构要求（封面/目录/图索引/表索引/摘要/引言/正文≥3个一级+4个二级+4个三级标题/图≥2/表≥2/结论/参考文献/AI使用声明）与全部格式规范（分节分页从奇数页开始、A4纵向、装订线1.2cm、对称页边距内2.8外2.3、上下2.8/2.5、标题1/2/3与正文1/图表标题样式、多级列表编号、摘要与引言后页码体系、奇偶页眉页脚、题注与交叉引用、目录与图表索引、文末AI使用声明），并完成排版验证。",
+            "phase": "complete",
+            "maxGoalRounds": 12
+          },
+          "roundsStarted": 0,
+          "createdAt": 1789971855250,
+          "updatedAt": 1789973560155
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 224133,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 90459,
+            "outputTokens": 219093,
+            "cacheReadTokens": 21612032,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 13,
+            "step": 1,
+            "buckets": {
+              "uncachedInputTokens": 683,
+              "outputTokens": 1985,
+              "cacheReadTokens": 281472,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 224133,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 282155,
+          "surfaceTokens": 192324,
+          "sampledSurfaceTokens": 191142
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 224133,
+        "val": {
+          "systemTokens": 2992,
+          "toolsTokens": 6830,
+          "messageTokens": 192324
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 224133,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 224133,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 224133,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 224133,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 224133,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 224133,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789977368733
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 224133,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 224133,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 224133,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

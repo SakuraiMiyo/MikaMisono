@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788929512193,
+      "cwd": "D:\\OneDrive\\碧蓝档案\\总力战\\BAMT"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 27586,
+        "val": {
+          "turns": 1,
+          "steps": 17,
+          "llmMs": 110428,
+          "toolMs": 5838,
+          "ttftMs": 10426,
+          "ttftSteps": 17,
+          "decodeMs": 100002,
+          "decodeTokens": 28176,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 27586,
+        "val": "You are auditing an existing"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 27586,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 27586,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 58691,
+            "outputTokens": 28176,
+            "cacheReadTokens": 786816,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 17,
+            "buckets": {
+              "uncachedInputTokens": 291,
+              "outputTokens": 675,
+              "cacheReadTokens": 84096,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 27586,
+        "val": {
+          "surfaceTokens": 65618,
+          "contextWindow": 1000000,
+          "pressureTokens": 84387,
+          "sampledSurfaceTokens": 64985
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 27586,
+        "val": {
+          "systemTokens": 1863,
+          "toolsTokens": 7020,
+          "messageTokens": 65618
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 27586,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 116699
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 27586,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Audit Electron and Rust backend",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 27586,
+        "val": "standard"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 27586,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 27586,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4.1-flash-expires-on-0910",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 27586,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788929512254
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 27586,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 27586,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 27586,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

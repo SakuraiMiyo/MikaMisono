@@ -1,0 +1,131 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1787954568413,
+      "cwd": "D:\\OneDrive"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 257,
+        "val": {
+          "turns": 3,
+          "steps": 3,
+          "llmMs": 6899,
+          "toolMs": 0,
+          "ttftMs": 3711,
+          "ttftSteps": 3,
+          "decodeMs": 3188,
+          "decodeTokens": 204,
+          "lastTurn": 3,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 257,
+        "val": "你好"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 257,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 257,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 2874,
+            "outputTokens": 204,
+            "cacheReadTokens": 1152,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 3,
+            "step": 1,
+            "buckets": {
+              "uncachedInputTokens": 1418,
+              "outputTokens": 78,
+              "cacheReadTokens": 0,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 257,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 1418,
+          "surfaceTokens": 223,
+          "sampledSurfaceTokens": 153
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 257,
+        "val": {
+          "systemTokens": 16,
+          "toolsTokens": 971,
+          "messageTokens": 223
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 257,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 257,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 257,
+        "val": "minimal"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 257,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 257,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 257,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1787954616742
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 257,
+        "val": null
+      }
+    }
+  }
+}

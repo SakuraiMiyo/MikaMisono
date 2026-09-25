@@ -1,0 +1,145 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789108279708,
+      "cwd": "C:\\Users\\Misono Mika\\Desktop\\Caesar"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 30539,
+        "val": {
+          "turns": 3,
+          "steps": 27,
+          "llmMs": 181251,
+          "toolMs": 14789,
+          "ttftMs": 41785,
+          "ttftSteps": 27,
+          "decodeMs": 139466,
+          "decodeTokens": 31667,
+          "lastTurn": 3,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 30539,
+        "val": "检查 cmakebuild 构建问题"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 30539,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 30539,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 20814,
+            "outputTokens": 31667,
+            "cacheReadTokens": 724992,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 3,
+            "step": 5,
+            "buckets": {
+              "uncachedInputTokens": 235,
+              "outputTokens": 931,
+              "cacheReadTokens": 48896,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 30539,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 49131,
+          "surfaceTokens": 30088,
+          "sampledSurfaceTokens": 29584
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 30539,
+        "val": {
+          "systemTokens": 2995,
+          "toolsTokens": 6830,
+          "messageTokens": 30088
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 30539,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 30539,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 30539,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 30539,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 30539,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4.1-flash-expires-on-0910",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 30539,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789108640629
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 30539,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 30539,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 30539,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

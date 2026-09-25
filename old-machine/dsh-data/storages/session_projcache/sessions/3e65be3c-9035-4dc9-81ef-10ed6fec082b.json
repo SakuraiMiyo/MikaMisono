@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786533552,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 38412,
+        "val": {
+          "turns": 1,
+          "steps": 14,
+          "llmMs": 272602,
+          "toolMs": 5434,
+          "ttftMs": 11188,
+          "ttftSteps": 14,
+          "decodeMs": 261414,
+          "decodeTokens": 38808,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 38412,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 38412,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 38412,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 49636,
+            "outputTokens": 38808,
+            "cacheReadTokens": 469760,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 14,
+            "buckets": {
+              "uncachedInputTokens": 102,
+              "outputTokens": 467,
+              "cacheReadTokens": 62720,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 38412,
+        "val": {
+          "surfaceTokens": 31966,
+          "contextWindow": 1000000,
+          "pressureTokens": 62822,
+          "sampledSurfaceTokens": 31748
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 38412,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 31966
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 38412,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 278550
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 38412,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写04章 GPIO点灯详解",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 38412,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 38412,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 38412,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 38412,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786533697
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 38412,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 38412,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 38412,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

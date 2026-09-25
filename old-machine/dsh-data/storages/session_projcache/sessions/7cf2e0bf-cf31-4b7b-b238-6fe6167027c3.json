@@ -1,0 +1,172 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789819571754,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\STC"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 81019,
+        "val": {
+          "turns": 1,
+          "steps": 54,
+          "llmMs": 413900,
+          "toolMs": 28495,
+          "ttftMs": 80074,
+          "ttftSteps": 54,
+          "decodeMs": 333826,
+          "decodeTokens": 83060,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 81019,
+        "val": "你是嵌入式教程作者。任务："
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 81019,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 81019,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 107041,
+            "outputTokens": 83060,
+            "cacheReadTokens": 5750272,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 54,
+            "buckets": {
+              "uncachedInputTokens": 250,
+              "outputTokens": 938,
+              "cacheReadTokens": 181888,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 81019,
+        "val": {
+          "surfaceTokens": 104539,
+          "contextWindow": 1000000,
+          "pressureTokens": 182138,
+          "sampledSurfaceTokens": 104115
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 81019,
+        "val": {
+          "systemTokens": 3097,
+          "toolsTokens": 7020,
+          "messageTokens": 104539
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 81019,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 444783
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 81019,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Write chapters 11-13",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 81019,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 81019,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 81019,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 81019,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789819571974
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 81019,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 81019,
+        "val": [
+          {
+            "content": "读取样板章节与全部源码（E10/E08/E11/E12、驱动、uvproj、说明书）",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 11-变量定位与内存分布.md",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 12-Flash与EEPROM掉电存储.md",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 13-逐飞助手调试体系.md",
+            "status": "completed"
+          },
+          {
+            "content": "复核三章的文件名/API/引脚与源码一致性",
+            "status": "completed"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 81019,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

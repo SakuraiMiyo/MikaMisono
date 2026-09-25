@@ -1,0 +1,21 @@
+﻿$ErrorActionPreference = 'Continue'
+$log = 'C:\OneDrive\MikaMisono\mika-chat\restart-dsh.log'
+function Log($msg) { Add-Content -Path $log -Value ("[{0}] {1}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $msg) -Encoding UTF8 }
+Set-Content -Path $log -Value '' -Encoding UTF8
+Log 'restart start'
+Start-Sleep -Seconds 2
+$procs = @(Get-Process -Name 'DSH Desktop' -ErrorAction SilentlyContinue)
+Log ("DSH process count: " + $procs.Count)
+foreach ($p in $procs) {
+    try { Stop-Process -Id $p.Id -Force -ErrorAction Stop; Log ("killed " + $p.Id) } catch { Log ("failed " + $p.Id + ": " + $_.Exception.Message) }
+}
+$deadline = (Get-Date).AddMinutes(2)
+while (@(Get-Process -Name 'DSH Desktop' -ErrorAction SilentlyContinue).Count -gt 0) {
+    if ((Get-Date) -gt $deadline) { break }
+    Start-Sleep -Seconds 1
+}
+Log 'DSH exited'
+$marker = 'C:\Users\MisonoMika\AppData\Roaming\DSH Desktop\crash-evidence\active-run.json'
+if (Test-Path $marker) { Remove-Item $marker -Force -ErrorAction SilentlyContinue; Log 'removed active-run marker' }
+Start-Process -FilePath 'C:\SoftWare\DeepSeekHarnessDesktop\DSH Desktop\DSH Desktop.exe'
+Log 'restart requested'

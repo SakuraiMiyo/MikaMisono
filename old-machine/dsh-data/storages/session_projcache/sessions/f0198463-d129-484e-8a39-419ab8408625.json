@@ -1,0 +1,176 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786533552,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 62989,
+        "val": {
+          "turns": 1,
+          "steps": 23,
+          "llmMs": 445057,
+          "toolMs": 8753,
+          "ttftMs": 20951,
+          "ttftSteps": 23,
+          "decodeMs": 424106,
+          "decodeTokens": 63852,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 62989,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 62989,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 62989,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 51322,
+            "outputTokens": 63852,
+            "cacheReadTokens": 1277824,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 23,
+            "buckets": {
+              "uncachedInputTokens": 77,
+              "outputTokens": 500,
+              "cacheReadTokens": 93824,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 62989,
+        "val": {
+          "surfaceTokens": 51518,
+          "contextWindow": 1000000,
+          "pressureTokens": 93901,
+          "sampledSurfaceTokens": 51269
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 62989,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 51518
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 62989,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 454853
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 62989,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写03章 工程模板与启动流程",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 62989,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 62989,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 62989,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 62989,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786533694
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 62989,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 62989,
+        "val": [
+          {
+            "content": "盘点模板工程目录结构与目标笔记目录",
+            "status": "completed"
+          },
+          {
+            "content": "读 user 目录源码（cpu0/cpu1_main、isr 系列）",
+            "status": "completed"
+          },
+          {
+            "content": "读 code/说明、IO 分配与禁引脚 txt",
+            "status": "completed"
+          },
+          {
+            "content": "盘点 libraries 各子目录与 version.txt",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 03 章 Markdown（250~400 行）",
+            "status": "completed"
+          },
+          {
+            "content": "自检硬规则并回复",
+            "status": "completed"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 62989,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

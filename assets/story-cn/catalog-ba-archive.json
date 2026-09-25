@@ -1,0 +1,970 @@
+[
+ {
+  "cover": "prologue",
+  "title_cn": "序章",
+  "sections": [
+   {
+    "id": 11000,
+    "title_cn": "序章 1.1",
+    "title_jp": "プロローグ 1.1",
+    "prev": 0,
+    "next": 0,
+    "after_battle": false
+   }
+  ]
+ },
+ {
+  "cover": "eden_treaty_chapter1",
+  "title_cn": "Vol.3 伊甸条约篇 第1章",
+  "sections": [
+   {
+    "id": 31010,
+    "title_cn": "序章",
+    "title_jp": "プロローグ",
+    "prev": 0,
+    "next": 31020,
+    "after_battle": false
+   },
+   {
+    "id": 31020,
+    "title_cn": "补习部",
+    "title_jp": "補習授業部",
+    "prev": 31010,
+    "next": 31030,
+    "after_battle": false
+   },
+   {
+    "id": 31030,
+    "title_cn": "茶会",
+    "title_jp": "ティーパーティー",
+    "prev": 31020,
+    "next": 31040,
+    "after_battle": false
+   },
+   {
+    "id": 31040,
+    "title_cn": "补习部的学生们（1）",
+    "title_jp": "補習授業部の生徒たち（１）",
+    "prev": 31030,
+    "next": 31050,
+    "after_battle": false
+   },
+   {
+    "id": 31050,
+    "title_cn": "补习部的学生们（2）",
+    "title_jp": "補習授業部の生徒たち（２）",
+    "prev": 31040,
+    "next": 31060,
+    "after_battle": false
+   },
+   {
+    "id": 31060,
+    "title_cn": "来做一下自我介绍吧！",
+    "title_jp": "自己紹介をしましょう！",
+    "prev": 31050,
+    "next": 31070,
+    "after_battle": false
+   },
+   {
+    "id": 31070,
+    "title_cn": "准备考试",
+    "title_jp": "試験勉強",
+    "prev": 31060,
+    "next": 31080,
+    "after_battle": false
+   },
+   {
+    "id": 31080,
+    "title_cn": "第1次特别学力考试",
+    "title_jp": "第1次特別学力試験",
+    "prev": 31070,
+    "next": 31090,
+    "after_battle": false
+   },
+   {
+    "id": 31090,
+    "title_cn": "暗流涌动",
+    "title_jp": "水面下に揺らめく影",
+    "prev": 31080,
+    "next": 31100,
+    "after_battle": false
+   },
+   {
+    "id": 31100,
+    "title_cn": "合宿，开始！",
+    "title_jp": "合宿、スタート！",
+    "prev": 31090,
+    "next": 31110,
+    "after_battle": false
+   },
+   {
+    "id": 31110,
+    "title_cn": "大扫除！",
+    "title_jp": "大掃除！",
+    "prev": 31100,
+    "next": 31120,
+    "after_battle": false
+   },
+   {
+    "id": 31120,
+    "title_cn": "合宿第一天的夜晚",
+    "title_jp": "合宿初日の夜",
+    "prev": 31110,
+    "next": 31130,
+    "after_battle": false
+   },
+   {
+    "id": 31130,
+    "title_cn": "补习部的模拟考试",
+    "title_jp": "補習授業部の模擬試験",
+    "prev": 31120,
+    "next": 31140,
+    "after_battle": false
+   },
+   {
+    "id": 31140,
+    "title_cn": "正义实现委员会的副委员长（1）",
+    "title_jp": "正義実現委員会の副委員長（１）",
+    "prev": 31130,
+    "next": 31150,
+    "after_battle": false
+   },
+   {
+    "id": 31150,
+    "title_cn": "正义实现委员会的副委员长（2）",
+    "title_jp": "正義実現委員会の副委員長（２）",
+    "prev": 31140,
+    "next": 31160,
+    "after_battle": false
+   },
+   {
+    "id": 31160,
+    "title_cn": "小小的间隙",
+    "title_jp": "小さな隙間",
+    "prev": 31150,
+    "next": 31170,
+    "after_battle": false
+   },
+   {
+    "id": 31170,
+    "title_cn": "圣三一的叛徒",
+    "title_jp": "トリニティの裏切り者",
+    "prev": 31160,
+    "next": 32010,
+    "after_battle": false
+   }
+  ]
+ },
+ {
+  "cover": "eden_treaty_chapter2",
+  "title_cn": "Vol.3 伊甸条约篇 第2章",
+  "sections": [
+   {
+    "id": 32010,
+    "title_cn": "巨大的怪物",
+    "title_jp": "巨大な怪物",
+    "prev": 0,
+    "next": 32020,
+    "after_battle": false
+   },
+   {
+    "id": 32020,
+    "title_cn": "修女会",
+    "title_jp": "シスターフッド",
+    "prev": 32010,
+    "next": 32030,
+    "after_battle": false
+   },
+   {
+    "id": 32030,
+    "title_cn": "深夜密会",
+    "title_jp": "深夜の密会",
+    "prev": 32020,
+    "next": 32040,
+    "after_battle": false
+   },
+   {
+    "id": 32040,
+    "title_cn": "泳装派对",
+    "title_jp": "水着パーティー",
+    "prev": 32030,
+    "next": 32050,
+    "after_battle": false
+   },
+   {
+    "id": 32050,
+    "title_cn": "深夜的大骚动（1）",
+    "title_jp": "真夜中の大騒ぎ（１）",
+    "prev": 32040,
+    "next": 32060,
+    "after_battle": false
+   },
+   {
+    "id": 32060,
+    "title_cn": "深夜的大骚动（2）",
+    "title_jp": "真夜中の大騒ぎ（２）",
+    "prev": 32050,
+    "next": 32065,
+    "after_battle": false
+   },
+   {
+    "id": 32065,
+    "title_cn": "深夜的大骚动（2）",
+    "title_jp": "真夜中の大騒ぎ（２）",
+    "prev": 32060,
+    "next": 32070,
+    "after_battle": true
+   },
+   {
+    "id": 32070,
+    "title_cn": "全新的视角",
+    "title_jp": "新しい視点",
+    "prev": 32065,
+    "next": 32080,
+    "after_battle": false
+   },
+   {
+    "id": 32080,
+    "title_cn": "微明的希望",
+    "title_jp": "差し込む希望",
+    "prev": 32070,
+    "next": 32090,
+    "after_battle": false
+   },
+   {
+    "id": 32090,
+    "title_cn": "黑手",
+    "title_jp": "黒い手",
+    "prev": 32080,
+    "next": 32100,
+    "after_battle": false
+   },
+   {
+    "id": 32100,
+    "title_cn": "第2次特别学力考试（1）",
+    "title_jp": "第2次特別学力試験（１）",
+    "prev": 32090,
+    "next": 32105,
+    "after_battle": false
+   },
+   {
+    "id": 32105,
+    "title_cn": "第2次特别学力考试（1）",
+    "title_jp": "第2次特別学力試験（１）",
+    "prev": 32100,
+    "next": 32110,
+    "after_battle": true
+   },
+   {
+    "id": 32110,
+    "title_cn": "第2次特别学力考试（2）",
+    "title_jp": "第2次特別学力試験（２）",
+    "prev": 32105,
+    "next": 32120,
+    "after_battle": false
+   },
+   {
+    "id": 32120,
+    "title_cn": "重回原点",
+    "title_jp": "再び原点へと",
+    "prev": 32110,
+    "next": 32130,
+    "after_battle": false
+   },
+   {
+    "id": 32130,
+    "title_cn": "即使如此",
+    "title_jp": "それでも",
+    "prev": 32120,
+    "next": 32140,
+    "after_battle": false
+   },
+   {
+    "id": 32140,
+    "title_cn": "坦白",
+    "title_jp": "こくはく",
+    "prev": 32130,
+    "next": 32150,
+    "after_battle": false
+   },
+   {
+    "id": 32150,
+    "title_cn": "全面开战",
+    "title_jp": "火蓋は切られて",
+    "prev": 32140,
+    "next": 32160,
+    "after_battle": false
+   },
+   {
+    "id": 32160,
+    "title_cn": "激战",
+    "title_jp": "激戦",
+    "prev": 32150,
+    "next": 32165,
+    "after_battle": false
+   },
+   {
+    "id": 32165,
+    "title_cn": "激战",
+    "title_jp": "激戦",
+    "prev": 32160,
+    "next": 32170,
+    "after_battle": true
+   },
+   {
+    "id": 32170,
+    "title_cn": "就算是这样的世界（1）",
+    "title_jp": "そんな世界も（１）",
+    "prev": 32165,
+    "next": 32175,
+    "after_battle": false
+   },
+   {
+    "id": 32175,
+    "title_cn": "就算是这样的世界（1）",
+    "title_jp": "そんな世界も（１）",
+    "prev": 32170,
+    "next": 32180,
+    "after_battle": true
+   },
+   {
+    "id": 32180,
+    "title_cn": "就算是这样的世界（2）",
+    "title_jp": "そんな世界も（２）",
+    "prev": 32175,
+    "next": 32185,
+    "after_battle": false
+   },
+   {
+    "id": 32185,
+    "title_cn": "就算是这样的世界（2）",
+    "title_jp": "そんな世界も（２）",
+    "prev": 32180,
+    "next": 32190,
+    "after_battle": true
+   },
+   {
+    "id": 32190,
+    "title_cn": "第3次特别学力考试",
+    "title_jp": "第3次特別学力試験",
+    "prev": 32185,
+    "next": 32200,
+    "after_battle": false
+   },
+   {
+    "id": 32200,
+    "title_cn": "尾声",
+    "title_jp": "エピローグ",
+    "prev": 32190,
+    "next": 33010,
+    "after_battle": false
+   }
+  ]
+ },
+ {
+  "cover": "eden_treaty_chapter3",
+  "title_cn": "Vol.3 伊甸条约篇 第3章",
+  "sections": [
+   {
+    "id": 33010,
+    "title_cn": "事后分析（1）",
+    "title_jp": "ポストモーテム（１）",
+    "prev": 32200,
+    "next": 33020,
+    "after_battle": false
+   },
+   {
+    "id": 33020,
+    "title_cn": "事后分析（２）",
+    "title_jp": "ポストモーテム（２）",
+    "prev": 33010,
+    "next": 33030,
+    "after_battle": false
+   },
+   {
+    "id": 33030,
+    "title_cn": "事后分析（３）",
+    "title_jp": "ポストモーテム（３）",
+    "prev": 33020,
+    "next": 33040,
+    "after_battle": false
+   },
+   {
+    "id": 33040,
+    "title_cn": "在那之后",
+    "title_jp": "それから",
+    "prev": 33030,
+    "next": 33050,
+    "after_battle": false
+   },
+   {
+    "id": 33050,
+    "title_cn": "伊甸条约签订仪式（1）",
+    "title_jp": "エデン条約調印式（１）",
+    "prev": 33040,
+    "next": 33060,
+    "after_battle": false
+   },
+   {
+    "id": 33060,
+    "title_cn": "伊甸条约签订仪式（2）",
+    "title_jp": "エデン条約調印式（２）",
+    "prev": 33050,
+    "next": 33070,
+    "after_battle": false
+   },
+   {
+    "id": 33070,
+    "title_cn": "染上战火与灰烬之日（１）",
+    "title_jp": "火と灰に染まる日（１）",
+    "prev": 33060,
+    "next": 33075,
+    "after_battle": false
+   },
+   {
+    "id": 33075,
+    "title_cn": "染上战火与灰烬之日（１）",
+    "title_jp": "火と灰に染まる日（１）",
+    "prev": 33070,
+    "next": 33080,
+    "after_battle": true
+   },
+   {
+    "id": 33080,
+    "title_cn": "染上战火与灰烬之日（２）",
+    "title_jp": "火と灰に染まる日（２）",
+    "prev": 33075,
+    "next": 33085,
+    "after_battle": false
+   },
+   {
+    "id": 33085,
+    "title_cn": "染上战火与灰烬之日（２）",
+    "title_jp": "火と灰に染まる日（２）",
+    "prev": 33080,
+    "next": 33090,
+    "after_battle": true
+   },
+   {
+    "id": 33090,
+    "title_cn": "憎恶的见证",
+    "title_jp": "憎悪の確認",
+    "prev": 33085,
+    "next": 33095,
+    "after_battle": false
+   },
+   {
+    "id": 33095,
+    "title_cn": "憎恶的见证",
+    "title_jp": "憎悪の確認",
+    "prev": 33090,
+    "next": 33100,
+    "after_battle": true
+   },
+   {
+    "id": 33100,
+    "title_cn": "甜蜜的谎言",
+    "title_jp": "甘い嘘",
+    "prev": 33095,
+    "next": 33110,
+    "after_battle": false
+   },
+   {
+    "id": 33110,
+    "title_cn": "加速的混乱（1）",
+    "title_jp": "加速する混乱（１）",
+    "prev": 33100,
+    "next": 33120,
+    "after_battle": false
+   },
+   {
+    "id": 33120,
+    "title_cn": "加速的混乱（2）",
+    "title_jp": "加速する混乱（２）",
+    "prev": 33110,
+    "next": 33130,
+    "after_battle": false
+   },
+   {
+    "id": 33130,
+    "title_cn": "遥不可及的彼岸",
+    "title_jp": "届かない向こう側",
+    "prev": 33120,
+    "next": 33140,
+    "after_battle": false
+   },
+   {
+    "id": 33140,
+    "title_cn": "于黑暗中",
+    "title_jp": "暗闇の中で",
+    "prev": 33130,
+    "next": 33150,
+    "after_battle": false
+   },
+   {
+    "id": 33150,
+    "title_cn": "对第五条古则的回答",
+    "title_jp": "五つ目の古則への答え",
+    "prev": 33140,
+    "next": 33160,
+    "after_battle": false
+   },
+   {
+    "id": 33160,
+    "title_cn": "碎片零落",
+    "title_jp": "いくつかの欠片たち",
+    "prev": 33150,
+    "next": 33170,
+    "after_battle": false
+   },
+   {
+    "id": 33170,
+    "title_cn": "憎恨的真面目",
+    "title_jp": "憎しみの正体",
+    "prev": 33160,
+    "next": 33180,
+    "after_battle": false
+   },
+   {
+    "id": 33180,
+    "title_cn": "不再迷惘",
+    "title_jp": "迷わずに",
+    "prev": 33170,
+    "next": 33190,
+    "after_battle": false
+   },
+   {
+    "id": 33190,
+    "title_cn": "我们的故事",
+    "title_jp": "私たちの物語",
+    "prev": 33180,
+    "next": 33195,
+    "after_battle": false
+   },
+   {
+    "id": 33195,
+    "title_cn": "我们的故事",
+    "title_jp": "私たちの物語",
+    "prev": 33190,
+    "next": 33200,
+    "after_battle": true
+   },
+   {
+    "id": 33200,
+    "title_cn": "乐园之名为（1）",
+    "title_jp": "楽園の名前は（１）",
+    "prev": 33195,
+    "next": 33205,
+    "after_battle": false
+   },
+   {
+    "id": 33205,
+    "title_cn": "乐园之名为（1）",
+    "title_jp": "楽園の名前は（１）",
+    "prev": 33200,
+    "next": 33210,
+    "after_battle": true
+   },
+   {
+    "id": 33210,
+    "title_cn": "乐园之名为（2）",
+    "title_jp": "楽園の名前は（２）",
+    "prev": 33205,
+    "next": 33215,
+    "after_battle": false
+   },
+   {
+    "id": 33215,
+    "title_cn": "乐园之名为（2）",
+    "title_jp": "楽園の名前は（２）",
+    "prev": 33210,
+    "next": 33220,
+    "after_battle": true
+   },
+   {
+    "id": 33220,
+    "title_cn": "乐园之名为（3）",
+    "title_jp": "楽園の名前は（３）",
+    "prev": 33215,
+    "next": 33225,
+    "after_battle": false
+   },
+   {
+    "id": 33225,
+    "title_cn": "乐园之名为（3）",
+    "title_jp": "楽園の名前は（３）",
+    "prev": 33220,
+    "next": 33230,
+    "after_battle": true
+   },
+   {
+    "id": 33230,
+    "title_cn": "在古圣堂地下",
+    "title_jp": "古聖堂の地下に",
+    "prev": 33225,
+    "next": 33235,
+    "after_battle": false
+   },
+   {
+    "id": 33235,
+    "title_cn": "在古圣堂地下",
+    "title_jp": "古聖堂の地下に",
+    "prev": 33230,
+    "next": 33240,
+    "after_battle": true
+   },
+   {
+    "id": 33240,
+    "title_cn": "谁的憎恨",
+    "title_jp": "誰の憎しみ",
+    "prev": 33235,
+    "next": 33245,
+    "after_battle": false
+   },
+   {
+    "id": 33245,
+    "title_cn": "谁的憎恨",
+    "title_jp": "誰の憎しみ",
+    "prev": 33240,
+    "next": 33250,
+    "after_battle": true
+   },
+   {
+    "id": 33250,
+    "title_cn": "尾声",
+    "title_jp": "エピローグ",
+    "prev": 33245,
+    "next": 0,
+    "after_battle": false
+   },
+   {
+    "id": 200,
+    "title_cn": "总力战",
+    "title_jp": "総力戦",
+    "prev": 0,
+    "next": 201,
+    "after_battle": false
+   },
+   {
+    "id": 201,
+    "title_cn": "薇娜：痛感差异的静观理解者",
+    "title_jp": "ビナー：違いを痛感する静観の理解者",
+    "prev": 0,
+    "next": 202,
+    "after_battle": false
+   },
+   {
+    "id": 202,
+    "title_cn": "赫赛德：以慈悲之苦痛定罪的审判者",
+    "title_jp": "ケセド： 慈悲深き苦痛をもって断罪する裁定者",
+    "prev": 0,
+    "next": 203,
+    "after_battle": false
+   },
+   {
+    "id": 203,
+    "title_cn": "被复制的喜悦",
+    "title_jp": "複製された歓喜",
+    "prev": 0,
+    "next": 204,
+    "after_battle": false
+   },
+   {
+    "id": 204,
+    "title_cn": "太古的教义",
+    "title_jp": "太古の教義",
+    "prev": 0,
+    "next": 205,
+    "after_battle": false
+   },
+   {
+    "id": 205,
+    "title_cn": "前往回转寿司战队的大本营！",
+    "title_jp": "カイテンジャーの本拠地へ向かえ！",
+    "prev": 0,
+    "next": 206,
+    "after_battle": false
+   },
+   {
+    "id": 206,
+    "title_cn": "记号的世界",
+    "title_jp": "記号の世界",
+    "prev": 0,
+    "next": 207,
+    "after_battle": false
+   },
+   {
+    "id": 207,
+    "title_cn": "霍德：由光芒证明的荣耀",
+    "title_jp": "ホド：輝きに証明されし栄光",
+    "prev": 0,
+    "next": 208,
+    "after_battle": false
+   },
+   {
+    "id": 208,
+    "title_cn": "The show must go on.",
+    "title_jp": "The show must go on.",
+    "prev": 0,
+    "next": 209,
+    "after_battle": false
+   },
+   {
+    "id": 209,
+    "title_cn": "关于不朽",
+    "title_jp": "不滅性について",
+    "prev": 0,
+    "next": 210,
+    "after_battle": false
+   },
+   {
+    "id": 210,
+    "title_cn": "海边的袭击者",
+    "title_jp": "浜辺の襲撃者",
+    "prev": 0,
+    "next": 0,
+    "after_battle": false
+   },
+   {
+    "id": 211,
+    "title_cn": "怪谈的末路",
+    "title_jp": "怪談の末路",
+    "prev": 0,
+    "next": 901,
+    "after_battle": false
+   },
+   {
+    "id": 100,
+    "title_cn": "特别委托",
+    "title_jp": "特別依頼",
+    "prev": 0,
+    "next": 101,
+    "after_battle": false
+   },
+   {
+    "id": 101,
+    "title_cn": "特别委托・悬赏通缉",
+    "title_jp": "特別依頼・指名手配",
+    "prev": 100,
+    "next": 102,
+    "after_battle": false
+   },
+   {
+    "id": 102,
+    "title_cn": "特别委托・信用点回收",
+    "title_jp": "特別依頼・クレジット回収",
+    "prev": 101,
+    "next": 103,
+    "after_battle": false
+   },
+   {
+    "id": 103,
+    "title_cn": "特别委托・据点防御",
+    "title_jp": "特別依頼・拠点防衛",
+    "prev": 102,
+    "next": 300,
+    "after_battle": false
+   },
+   {
+    "id": 300,
+    "title_cn": "联合战术对抗战",
+    "title_jp": "合同戦術対抗戦",
+    "prev": 103,
+    "next": 400,
+    "after_battle": false
+   },
+   {
+    "id": 400,
+    "title_cn": "欢迎光临“天使24”便利店！",
+    "title_jp": "コンビニ「エンジェル24」へようこそ！",
+    "prev": 300,
+    "next": 500,
+    "after_battle": false
+   },
+   {
+    "id": 500,
+    "title_cn": "所谓制造室",
+    "title_jp": "クラフトチェンバーとは",
+    "prev": 400,
+    "next": 600,
+    "after_battle": false
+   },
+   {
+    "id": 600,
+    "title_cn": "联合火力演习",
+    "title_jp": "合同火力演習",
+    "prev": 500,
+    "next": 700,
+    "after_battle": false
+   },
+   {
+    "id": 700,
+    "title_cn": "众人拾柴火焰高？",
+    "title_jp": "共存共栄すれば書類もまた軽し？",
+    "prev": 600,
+    "next": 800,
+    "after_battle": false
+   },
+   {
+    "id": 800,
+    "title_cn": "葵的登场",
+    "title_jp": "アオイ登場",
+    "prev": 700,
+    "next": 801,
+    "after_battle": false
+   },
+   {
+    "id": 801,
+    "title_cn": "大决战",
+    "title_jp": "大決戦",
+    "prev": 800,
+    "next": 0,
+    "after_battle": false
+   },
+   {
+    "id": 901,
+    "title_cn": "赛特的愤怒",
+    "title_jp": "セトの憤怒",
+    "prev": 211,
+    "next": 0,
+    "after_battle": false
+   },
+   {
+    "id": 1003805,
+    "title_cn": "祭典的准备",
+    "title_jp": "祭りの準備",
+    "prev": 0,
+    "next": 1003810,
+    "after_battle": false
+   },
+   {
+    "id": 1003810,
+    "title_cn": "异变",
+    "title_jp": "異変",
+    "prev": 1003805,
+    "next": 1003820,
+    "after_battle": false
+   },
+   {
+    "id": 1003820,
+    "title_cn": "谣言",
+    "title_jp": "噂",
+    "prev": 1003810,
+    "next": 1003830,
+    "after_battle": false
+   },
+   {
+    "id": 1003830,
+    "title_cn": "谣言",
+    "title_jp": "噂",
+    "prev": 1003820,
+    "next": 1003840,
+    "after_battle": false
+   },
+   {
+    "id": 1003840,
+    "title_cn": "大人和孩子、孩子，以及孩子。",
+    "title_jp": "大人と子供、子供、子供。",
+    "prev": 1003830,
+    "next": 1003845,
+    "after_battle": false
+   },
+   {
+    "id": 1003845,
+    "title_cn": "过去与现在的分界线（1）",
+    "title_jp": "過去と今の境界線（１）",
+    "prev": 1003840,
+    "next": 1003850,
+    "after_battle": true
+   },
+   {
+    "id": 1003850,
+    "title_cn": "",
+    "title_jp": "君の世界との交差点（１）",
+    "prev": 1003845,
+    "next": 1003855,
+    "after_battle": false
+   },
+   {
+    "id": 1003855,
+    "title_cn": "",
+    "title_jp": "君の世界との交差点（２）",
+    "prev": 1003850,
+    "next": 1003860,
+    "after_battle": true
+   },
+   {
+    "id": 1003860,
+    "title_cn": "",
+    "title_jp": "遠い未来の私たち",
+    "prev": 1003855,
+    "next": 1003870,
+    "after_battle": false
+   },
+   {
+    "id": 1003870,
+    "title_cn": "",
+    "title_jp": "そこに行けば麒麟に会えるだろうか。",
+    "prev": 1003860,
+    "next": 1003880,
+    "after_battle": false
+   },
+   {
+    "id": 1003880,
+    "title_cn": "",
+    "title_jp": "幾度道を違えたとしても（１）",
+    "prev": 1003870,
+    "next": 1003885,
+    "after_battle": true
+   },
+   {
+    "id": 1003885,
+    "title_cn": "",
+    "title_jp": "幾度道を違えたとしても（２）",
+    "prev": 1003880,
+    "next": 1003890,
+    "after_battle": true
+   },
+   {
+    "id": 1003890,
+    "title_cn": "",
+    "title_jp": "すべての面倒事を（１）",
+    "prev": 1003885,
+    "next": 1003895,
+    "after_battle": false
+   },
+   {
+    "id": 1003895,
+    "title_cn": "",
+    "title_jp": "すべての面倒事を（２）",
+    "prev": 1003890,
+    "next": 1003900,
+    "after_battle": true
+   },
+   {
+    "id": 10038100,
+    "title_cn": "",
+    "title_jp": "同じ空の下で（１）",
+    "prev": 1003895,
+    "next": 10038105,
+    "after_battle": false
+   },
+   {
+    "id": 0,
+    "title_cn": "",
+    "title_jp": "同じ空の下で（２）",
+    "prev": 0,
+    "next": 0,
+    "after_battle": false
+   },
+   {
+    "id": 10038110,
+    "title_cn": "",
+    "title_jp": "月影祭",
+    "prev": 10038105,
+    "next": 0,
+    "after_battle": false
+   }
+  ]
+ }
+]

@@ -1,0 +1,145 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788778176650,
+      "cwd": "D:\\OneDrive\\MikaMisono"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 272,
+        "val": {
+          "turns": 1,
+          "steps": 1,
+          "llmMs": 2933,
+          "toolMs": 0,
+          "ttftMs": 520,
+          "ttftSteps": 1,
+          "decodeMs": 2413,
+          "decodeTokens": 251,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 272,
+        "val": "你是"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 272,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 6427,
+            "outputTokens": 251,
+            "cacheReadTokens": 2432,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 1,
+            "buckets": {
+              "uncachedInputTokens": 6427,
+              "outputTokens": 251,
+              "cacheReadTokens": 2432,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 272,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 8859,
+          "surfaceTokens": 709,
+          "sampledSurfaceTokens": 484
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "systemTokens": 1753,
+          "toolsTokens": 6830,
+          "messageTokens": 709
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 272,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 272,
+        "val": "standard"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 272,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 272,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788778179748
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 272,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 272,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 272,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

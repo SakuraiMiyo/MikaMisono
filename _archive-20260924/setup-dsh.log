@@ -1,0 +1,25 @@
+﻿
+[2026-08-29 08:05:16] setup start
+[2026-08-29 08:05:19] DSH process count: 5
+[2026-08-29 08:05:19] killed 14140
+[2026-08-29 08:05:19] killed 19492
+[2026-08-29 08:05:19] killed 57080
+[2026-08-29 08:05:19] killed 58556
+[2026-08-29 08:05:19] failed to kill 74492: 找不到进程标识符为 74492 的进程。
+[2026-08-29 08:05:19] DSH Desktop exit wait finished
+[2026-08-29 08:05:19] profile writable: True
+[2026-08-29 08:05:19] generating persona patch...
+[2026-08-29 08:05:19] [gen] 宸茬敓鎴?鈫?C:\Users\MisonoMika\.dsh\profiles\desktop\cordis.patch.yml
+[2026-08-29 08:05:19] [gen] persona 378 琛?/ 10649 瀛楃
+[2026-08-29 08:05:19] [gen] 閲嶅惎 DSH Desktop 鍚庣敓鏁堬紙persona 鍙樻洿瀵规柊浼氳瘽鐢熸晥锛?
+[2026-08-29 08:05:19] gen-persona exit code: 0
+[2026-08-29 08:05:19] standard preset persona disabled
+[2026-08-29 08:05:19] dependency mika-watch-boot already present
+[2026-08-29 08:05:19] bundle mika-watch-boot already present
+[2026-08-29 08:05:19] desktop package.json updated
+[2026-08-29 08:05:19] running pnpm install...
+[2026-08-29 08:05:19] Already up to date
+[2026-08-29 08:05:19] Done in 255ms using pnpm v11.8.0
+[2026-08-29 08:05:19] pnpm install exit code: 0
+[2026-08-29 08:05:19] mika-watch-boot installed in desktop profile
+[2026-08-29 08:05:19] restart requested

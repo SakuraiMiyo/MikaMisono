@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788929527734,
+      "cwd": "D:\\OneDrive\\碧蓝档案\\总力战\\BAMT"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 22961,
+        "val": {
+          "turns": 1,
+          "steps": 21,
+          "llmMs": 91001,
+          "toolMs": 28349,
+          "ttftMs": 11511,
+          "ttftSteps": 21,
+          "decodeMs": 79490,
+          "decodeTokens": 23761,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 22961,
+        "val": "You are auditing the build/tooling/docs"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 22961,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 22961,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 88869,
+            "outputTokens": 23761,
+            "cacheReadTokens": 1159424,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 21,
+            "buckets": {
+              "uncachedInputTokens": 233,
+              "outputTokens": 4228,
+              "cacheReadTokens": 112512,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 22961,
+        "val": {
+          "surfaceTokens": 73633,
+          "contextWindow": 1000000,
+          "pressureTokens": 112745,
+          "sampledSurfaceTokens": 70134
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 22961,
+        "val": {
+          "systemTokens": 1863,
+          "toolsTokens": 7020,
+          "messageTokens": 73633
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 22961,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 119754
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 22961,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Audit tooling, docs, packaging",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 22961,
+        "val": "standard"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 22961,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 22961,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4.1-flash-expires-on-0910",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 22961,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788929527836
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 22961,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 22961,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 22961,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

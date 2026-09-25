@@ -1,0 +1,172 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789819571754,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\STC"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 66056,
+        "val": {
+          "turns": 1,
+          "steps": 49,
+          "llmMs": 329534,
+          "toolMs": 17942,
+          "ttftMs": 82692,
+          "ttftSteps": 49,
+          "decodeMs": 246842,
+          "decodeTokens": 67590,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 66056,
+        "val": "你是技术文档作者。任务：为"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 66056,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 66056,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 200443,
+            "outputTokens": 67590,
+            "cacheReadTokens": 8973312,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 49,
+            "buckets": {
+              "uncachedInputTokens": 179,
+              "outputTokens": 721,
+              "cacheReadTokens": 260736,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 66056,
+        "val": {
+          "surfaceTokens": 136985,
+          "contextWindow": 1000000,
+          "pressureTokens": 260915,
+          "sampledSurfaceTokens": 136680
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 66056,
+        "val": {
+          "systemTokens": 3097,
+          "toolsTokens": 7020,
+          "messageTokens": 136985
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 66056,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 349296
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 66056,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Write index files and hardware basics",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 66056,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 66056,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 66056,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 66056,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789819571979
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 66056,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 66056,
+        "val": [
+          {
+            "content": "读取 TC264 三份样板 + STC 全部素材与源码，核对目录/宏事实",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 STCNotes\\例程索引.md",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 STCNotes\\99-资料与链接索引.md",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 STCNotes\\硬件相关\\硬件基础.md（含资源冲突表）",
+            "status": "completed"
+          },
+          {
+            "content": "复核三个文件的引脚/宏与源码一致性，统计行数",
+            "status": "completed"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 66056,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

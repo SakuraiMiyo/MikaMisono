@@ -1,0 +1,172 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789819571754,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\STC"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 105317,
+        "val": {
+          "turns": 1,
+          "steps": 49,
+          "llmMs": 487888,
+          "toolMs": 8743,
+          "ttftMs": 83709,
+          "ttftSteps": 49,
+          "decodeMs": 404179,
+          "decodeTokens": 107220,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 105317,
+        "val": "你是嵌入式教程作者。任务："
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 105317,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 105317,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 171371,
+            "outputTokens": 107220,
+            "cacheReadTokens": 7712256,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 49,
+            "buckets": {
+              "uncachedInputTokens": 178,
+              "outputTokens": 1129,
+              "cacheReadTokens": 257664,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 105317,
+        "val": {
+          "surfaceTokens": 150622,
+          "contextWindow": 1000000,
+          "pressureTokens": 257842,
+          "sampledSurfaceTokens": 150147
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 105317,
+        "val": {
+          "systemTokens": 3097,
+          "toolsTokens": 7020,
+          "messageTokens": 150622
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 105317,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 498919
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 105317,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Write chapters 07 09 10",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 105317,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 105317,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 105317,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 105317,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789819571965
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 105317,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 105317,
+        "val": [
+          {
+            "content": "读透 TC264-Learning 04 章样板与全部相关源码（PWM/EXTI/ENCODER/GPIO/ISR/PIT/iSR）",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 07-PWM与舵机电机控制.md",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 09-外部中断入门.md",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 10-编码器测速.md",
+            "status": "completed"
+          },
+          {
+            "content": "校对三章：函数名/宏名/引脚与源码逐字一致，页脚导航正确",
+            "status": "completed"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 105317,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

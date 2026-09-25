@@ -1,0 +1,145 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788777226486,
+      "cwd": "D:\\OneDrive\\MikaMisono"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 65180,
+        "val": {
+          "turns": 3,
+          "steps": 69,
+          "llmMs": 550593,
+          "toolMs": 527122,
+          "ttftMs": 54389,
+          "ttftSteps": 69,
+          "decodeMs": 496204,
+          "decodeTokens": 67918,
+          "lastTurn": 3,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 65180,
+        "val": "优化提示词注入与记忆向量化实现"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 65180,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 65180,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 88081,
+            "outputTokens": 67918,
+            "cacheReadTokens": 6278144,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 3,
+            "step": 16,
+            "buckets": {
+              "uncachedInputTokens": 179,
+              "outputTokens": 1462,
+              "cacheReadTokens": 150016,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 65180,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 150195,
+          "surfaceTokens": 112438,
+          "sampledSurfaceTokens": 111258
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 65180,
+        "val": {
+          "systemTokens": 1753,
+          "toolsTokens": 6830,
+          "messageTokens": 112438
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 65180,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 65180,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 65180,
+        "val": "standard"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 65180,
+        "val": {
+          "preset": "danger-full-access",
+          "sandbox": "danger-full-access",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 65180,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 65180,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788778330084
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 65180,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 65180,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 65180,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

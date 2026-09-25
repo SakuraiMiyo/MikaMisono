@@ -1,0 +1,12 @@
+﻿$ErrorActionPreference = 'Stop'
+$log = 'C:\OneDrive\MikaMisono\mika-chat\restart-task.log'
+Set-Content -Path $log -Value '' -Encoding UTF8
+Add-Content -Path $log -Value ("[{0}] bootstrap start" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss')) -Encoding UTF8
+$taskName = 'DSHRestartMika'
+$action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument '-NoProfile -ExecutionPolicy Bypass -File "C:\OneDrive\MikaMisono\mika-chat\restart-dsh.ps1"'
+$trigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(1)
+$principal = New-ScheduledTaskPrincipal -UserId "$env:USERDOMAIN\$env:USERNAME" -LogonType Interactive -RunLevel Highest
+Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger -Principal $principal -Force | Out-Null
+Add-Content -Path $log -Value 'task registered' -Encoding UTF8
+Start-ScheduledTask -TaskName $taskName
+Add-Content -Path $log -Value 'task started' -Encoding UTF8

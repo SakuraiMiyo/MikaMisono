@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786581053,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 58944,
+        "val": {
+          "turns": 1,
+          "steps": 23,
+          "llmMs": 395288,
+          "toolMs": 12443,
+          "ttftMs": 22020,
+          "ttftSteps": 23,
+          "decodeMs": 373268,
+          "decodeTokens": 59763,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 58944,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 58944,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 58944,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 78637,
+            "outputTokens": 59763,
+            "cacheReadTokens": 1349760,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 23,
+            "buckets": {
+              "uncachedInputTokens": 163,
+              "outputTokens": 255,
+              "cacheReadTokens": 113536,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 58944,
+        "val": {
+          "surfaceTokens": 63393,
+          "contextWindow": 1000000,
+          "pressureTokens": 113699,
+          "sampledSurfaceTokens": 63272
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 58944,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 63393
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 58944,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 408451
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 58944,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写11章 双核与进阶主题",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 58944,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 58944,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 58944,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 58944,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786581178
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 58944,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 58944,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 58944,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786565129,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 26720,
+        "val": {
+          "turns": 1,
+          "steps": 11,
+          "llmMs": 214124,
+          "toolMs": 4167,
+          "ttftMs": 10766,
+          "ttftSteps": 11,
+          "decodeMs": 203358,
+          "decodeTokens": 27101,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 26720,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 26720,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 26720,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 42842,
+            "outputTokens": 27101,
+            "cacheReadTokens": 408832,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 11,
+            "buckets": {
+              "uncachedInputTokens": 163,
+              "outputTokens": 310,
+              "cacheReadTokens": 53504,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 26720,
+        "val": {
+          "surfaceTokens": 28827,
+          "contextWindow": 1000000,
+          "pressureTokens": 53667,
+          "sampledSurfaceTokens": 28681
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 26720,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 28827
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 26720,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 218780
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 26720,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写10章 编码器测速详解",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 26720,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 26720,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 26720,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 26720,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786565321
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 26720,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 26720,
+        "val": [
+          {
+            "content": "读 E07 cpu0_main.c（oem 编码）核对例程",
+            "status": "in_progress"
+          },
+          {
+            "content": "读 zf_driver_encoder.h 核对 API 原型/注释/引脚",
+            "status": "pending"
+          },
+          {
+            "content": "读 推荐IO分配.txt 前 60 行确认编码器引脚",
+            "status": "pending"
+          },
+          {
+            "content": "确认目标目录并写 10-编码器测速.md",
+            "status": "pending"
+          },
+          {
+            "content": "校验行数与格式，回复结果",
+            "status": "pending"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 26720,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

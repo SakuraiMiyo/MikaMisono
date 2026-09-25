@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786565128,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 30771,
+        "val": {
+          "turns": 1,
+          "steps": 7,
+          "llmMs": 241177,
+          "toolMs": 2863,
+          "ttftMs": 6241,
+          "ttftSteps": 7,
+          "decodeMs": 234936,
+          "decodeTokens": 31054,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 30771,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 30771,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 30771,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 17380,
+            "outputTokens": 31054,
+            "cacheReadTokens": 254720,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 7,
+            "buckets": {
+              "uncachedInputTokens": 236,
+              "outputTokens": 771,
+              "cacheReadTokens": 52480,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 30771,
+        "val": {
+          "surfaceTokens": 27026,
+          "contextWindow": 1000000,
+          "pressureTokens": 52716,
+          "sampledSurfaceTokens": 26627
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 30771,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 27026
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 30771,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 244466
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 30771,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写07章 PWM舵机电机详解",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 30771,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 30771,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 30771,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 30771,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786565317
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 30771,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 30771,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 30771,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

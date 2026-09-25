@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786533551,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 32994,
+        "val": {
+          "turns": 1,
+          "steps": 25,
+          "llmMs": 274277,
+          "toolMs": 4547,
+          "ttftMs": 19088,
+          "ttftSteps": 25,
+          "decodeMs": 255189,
+          "decodeTokens": 33806,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 32994,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 32994,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 32994,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 32903,
+            "outputTokens": 33806,
+            "cacheReadTokens": 998272,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 25,
+            "buckets": {
+              "uncachedInputTokens": 48,
+              "outputTokens": 461,
+              "cacheReadTokens": 56064,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 32994,
+        "val": {
+          "surfaceTokens": 28167,
+          "contextWindow": 1000000,
+          "pressureTokens": 56112,
+          "sampledSurfaceTokens": 27951
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 32994,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 28167
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 32994,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 279811
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 32994,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写01章 单片机基础概念",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 32994,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 32994,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 32994,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 32994,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786533689
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 32994,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 32994,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 32994,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

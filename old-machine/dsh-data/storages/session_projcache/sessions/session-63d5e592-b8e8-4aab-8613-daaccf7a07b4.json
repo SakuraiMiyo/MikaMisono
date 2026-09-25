@@ -1,0 +1,145 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788775725360,
+      "cwd": "D:\\OneDrive"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 152193,
+        "val": {
+          "turns": 9,
+          "steps": 91,
+          "llmMs": 1028132,
+          "toolMs": 32387692,
+          "ttftMs": 122011,
+          "ttftSteps": 90,
+          "decodeMs": 906121,
+          "decodeTokens": 154884,
+          "lastTurn": 9,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 152193,
+        "val": "我的电脑怎么打不开vscode了你"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 152193,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 152193,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 235381,
+            "outputTokens": 154884,
+            "cacheReadTokens": 11908352,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 9,
+            "step": 8,
+            "buckets": {
+              "uncachedInputTokens": 378,
+              "outputTokens": 1063,
+              "cacheReadTokens": 267264,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 152193,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 267642,
+          "surfaceTokens": 211277,
+          "sampledSurfaceTokens": 210521
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 152193,
+        "val": {
+          "systemTokens": 1750,
+          "toolsTokens": 6830,
+          "messageTokens": 211277
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 152193,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 152193,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 152193,
+        "val": "standard"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 152193,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 152193,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 152193,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789389733107
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 152193,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 152193,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 152193,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+ "CharacterDialogFieldExcel": {
+  "typeIndex": 9734,
+  "namespace": "FlatData",
+  "fields": [
+   {
+    "name": "<ParcelResultDB>k__BackingField",
+    "typeIndex": 67165503,
+    "token": 67416
+   },
+   {
+    "name": "supportEncoding",
+    "typeIndex": 82738,
+    "token": 67165505
+   }
+  ]
+ },
+ "FieldStoryStageExcel": {
+  "typeIndex": 9818,
+  "namespace": "FlatData",
+  "fields": [
+   {
+    "name": null,
+    "typeIndex": 29060,
+    "token": 285624
+   },
+   {
+    "name": "<IsPractice>k__BackingField",
+    "typeIndex": 67165671,
+    "token": 47699
+   }
+  ]
+ },
+ "ScenarioScriptField1Excel": {
+  "typeIndex": 9872,
+  "namespace": "FlatData",
+  "fields": [
+   {
+    "name": "<ParcelResultDB>k__BackingField",
+    "typeIndex": 67165771,
+    "token": 67416
+   },
+   {
+    "name": "nClosed",
+    "typeIndex": 1355891,
+    "token": 67165773
+   }
+  ]
+ }
+}

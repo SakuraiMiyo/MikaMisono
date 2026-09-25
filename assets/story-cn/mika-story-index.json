@@ -1,0 +1,487 @@
+{
+ "mika_total": 992,
+ "mika_cjk_total": 17133,
+ "stories": [
+  {
+   "cat": "Vol.3",
+   "story": "31030",
+   "story_title": "第3话;茶会",
+   "story_title_jp": "第3話;ティーパーティー",
+   "turns": 130,
+   "mika": 47,
+   "mika_cjk": 911,
+   "variants": [
+    "미카"
+   ],
+   "co_stars": [
+    "渚",
+    "老师",
+    "（未标明）",
+    "旁白",
+    "日富美",
+    "未知"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "31160",
+   "story_title": "第16话;小小的间隙",
+   "story_title_jp": "第16話;小さな隙間",
+   "turns": 93,
+   "mika": 4,
+   "mika_cjk": 66,
+   "variants": [
+    "미카"
+   ],
+   "co_stars": [
+    "花子",
+    "日富美",
+    "小春",
+    "梓",
+    "未知",
+    "老师"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "31170",
+   "story_title": "第17话;圣三一的叛徒",
+   "story_title_jp": "第17話;トリニティの裏切り者",
+   "turns": 70,
+   "mika": 53,
+   "mika_cjk": 1156,
+   "variants": [
+    "미카"
+   ],
+   "co_stars": [
+    "老师",
+    "未知",
+    "梓",
+    "旁白"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "32010",
+   "story_title": "第1话;巨大的怪物",
+   "story_title_jp": "第1話;巨大な怪物",
+   "turns": 164,
+   "mika": 137,
+   "mika_cjk": 3652,
+   "variants": [
+    "미카"
+   ],
+   "co_stars": [
+    "老师",
+    "莲实",
+    "未知",
+    "旁白",
+    "正义实现委员会成员",
+    "剑先"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "32170",
+   "story_title": "第17话;就算是这样的世界（1）",
+   "story_title_jp": "第17話;そんな世界も（１）",
+   "turns": 88,
+   "mika": 50,
+   "mika_cjk": 1459,
+   "variants": [
+    "미카"
+   ],
+   "co_stars": [
+    "花子",
+    "梓",
+    "小春",
+    "老师",
+    "日富美",
+    "旁白"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "32175",
+   "story_title": "原来如此呢～，是这么回事啊。难怪大家嘴上都一口一个“夏莱”。大人还真是麻烦啊。",
+   "story_title_jp": "……なるほどねー、そっかそっかぁ。そりゃみんな「シャーレ」「シャーレ」って言うわけだ。厄介だね、「大人」って。",
+   "turns": 25,
+   "mika": 14,
+   "mika_cjk": 318,
+   "variants": [
+    "미카"
+   ],
+   "co_stars": [
+    "花子",
+    "梓",
+    "阿里乌斯学生",
+    "日富美",
+    "未知"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "32180",
+   "story_title": "第18话;就算是这样的世界（2）",
+   "story_title_jp": "第18話;そんな世界も（２）",
+   "turns": 21,
+   "mika": 12,
+   "mika_cjk": 220,
+   "variants": [
+    "미카"
+   ],
+   "co_stars": [
+    "花子",
+    "樱子",
+    "玛丽",
+    "日向"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "32185",
+   "story_title": "……什么啊，一点也不好玩嘛。",
+   "story_title_jp": "……何これ、洒落にならないなぁ。",
+   "turns": 56,
+   "mika": 39,
+   "mika_cjk": 620,
+   "variants": [
+    "미카",
+    "미카 비무장"
+   ],
+   "co_stars": [
+    "花子",
+    "梓",
+    "旁白",
+    "老师",
+    "未知"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "33020",
+   "story_title": "第2话;事后分析（２）",
+   "story_title_jp": "第2話;ポストモーテム（２）",
+   "turns": 103,
+   "mika": 9,
+   "mika_cjk": 166,
+   "variants": [
+    "미카",
+    "미카 비무장"
+   ],
+   "co_stars": [
+    "花子",
+    "渚",
+    "梓",
+    "日富美",
+    "樱子",
+    "圣亚"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "33030",
+   "story_title": "第3话;事后分析（３）",
+   "story_title_jp": "第3話;ポストモーテム（３）",
+   "turns": 211,
+   "mika": 82,
+   "mika_cjk": 1931,
+   "variants": [
+    "미카",
+    "미카 비무장"
+   ],
+   "co_stars": [
+    "花子",
+    "渚",
+    "旁白",
+    "老师",
+    "未知",
+    "（未标明）"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "33070",
+   "story_title": "第7话;染上战火与灰烬之日（１）",
+   "story_title_jp": "第7話;火と灰に染まる日（１）",
+   "turns": 110,
+   "mika": 1,
+   "mika_cjk": 2,
+   "variants": [
+    "미카 비무장"
+   ],
+   "co_stars": [
+    "日奈",
+    "真琴",
+    "莲实",
+    "日向",
+    "日和",
+    "纱织"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "33110",
+   "story_title": "第11话;加速的混乱（1）",
+   "story_title_jp": "第11話;加速する混乱（１）",
+   "turns": 136,
+   "mika": 6,
+   "mika_cjk": 45,
+   "variants": [
+    "미카 비무장"
+   ],
+   "co_stars": [
+    "花子",
+    "三一学生",
+    "修女会",
+    "小春",
+    "正义实现委员会成员",
+    "华绘"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "33160",
+   "story_title": "第16话;碎片零落",
+   "story_title_jp": "第16話;いくつかの欠片たち",
+   "turns": 202,
+   "mika": 22,
+   "mika_cjk": 439,
+   "variants": [
+    "미카 비무장"
+   ],
+   "co_stars": [
+    "圣亚",
+    "花子",
+    "茶会干部",
+    "茶会主战派",
+    "未知",
+    "梅斯特罗"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "33170",
+   "story_title": "第17话;憎恨的真面目",
+   "story_title_jp": "第17話;憎しみの正体",
+   "turns": 116,
+   "mika": 48,
+   "mika_cjk": 611,
+   "variants": [
+    "미카",
+    "미카 비무장"
+   ],
+   "co_stars": [
+    "圣亚",
+    "茶会主战派",
+    "小春",
+    "老师",
+    "旁白",
+    "渚"
+   ]
+  },
+  {
+   "cat": "Vol.3",
+   "story": "33250",
+   "story_title": "第25话;尾声",
+   "story_title_jp": "第25話;エピローグ",
+   "turns": 88,
+   "mika": 12,
+   "mika_cjk": 368,
+   "variants": [
+    "미카 비무장"
+   ],
+   "co_stars": [
+    "圣亚",
+    "渚",
+    "亚津子",
+    "茶会行政官",
+    "日富美",
+    "小春"
+   ]
+  },
+  {
+   "cat": "原版羁绊",
+   "story": "100592",
+   "story_title": "重归平稳的日常",
+   "story_title_jp": "再び穏やかな日常へ",
+   "turns": 98,
+   "mika": 58,
+   "mika_cjk": 658,
+   "variants": [
+    "미카"
+   ],
+   "co_stars": [
+    "老师",
+    "店员",
+    "旁白",
+    "未知",
+    "（未标明）"
+   ]
+  },
+  {
+   "cat": "原版羁绊",
+   "story": "100593",
+   "story_title": "义务劳动",
+   "story_title_jp": "ボランティア活動",
+   "turns": 39,
+   "mika": 25,
+   "mika_cjk": 352,
+   "variants": [
+    "미카 케이프오프",
+    "미카 학교 체육복"
+   ],
+   "co_stars": [
+    "老师",
+    "未知",
+    "旁白"
+   ]
+  },
+  {
+   "cat": "原版羁绊",
+   "story": "100595",
+   "story_title": "阁楼里的公主殿下",
+   "story_title_jp": "屋根裏部屋のお姫様",
+   "turns": 100,
+   "mika": 40,
+   "mika_cjk": 589,
+   "variants": [
+    "미카"
+   ],
+   "co_stars": [
+    "未知",
+    "三一宿舍舍监学生",
+    "旁白",
+    "（未标明）",
+    "老师"
+   ]
+  },
+  {
+   "cat": "原版羁绊",
+   "story": "100596",
+   "story_title": "伤痕",
+   "story_title_jp": "きずあと",
+   "turns": 114,
+   "mika": 54,
+   "mika_cjk": 702,
+   "variants": [
+    "미카",
+    "미카 학교 수영복"
+   ],
+   "co_stars": [
+    "老师",
+    "三一教职员",
+    "旁白",
+    "看起来阴险的学生 B",
+    "看起来阴险的学生 A",
+    "未知"
+   ]
+  },
+  {
+   "cat": "泳装羁绊",
+   "story": "101222",
+   "story_title": "连自己都不了解的自己",
+   "story_title_jp": "私も知らない私",
+   "turns": 46,
+   "mika": 36,
+   "mika_cjk": 482,
+   "variants": [
+    "미카 수영복"
+   ],
+   "co_stars": [
+    "老师",
+    "未知",
+    "旁白"
+   ]
+  },
+  {
+   "cat": "泳装羁绊",
+   "story": "101223",
+   "story_title": "课程的后续",
+   "story_title_jp": "授業の続き",
+   "turns": 58,
+   "mika": 44,
+   "mika_cjk": 512,
+   "variants": [
+    "미카 수영복"
+   ],
+   "co_stars": [
+    "（未标明）",
+    "旁白",
+    "老师",
+    "未知"
+   ]
+  },
+  {
+   "cat": "泳装羁绊",
+   "story": "101225",
+   "story_title": "海滩上发光的东西",
+   "story_title_jp": "浜辺に光るもの",
+   "turns": 43,
+   "mika": 32,
+   "mika_cjk": 312,
+   "variants": [
+    "미카 수영복"
+   ],
+   "co_stars": [
+    "旁白",
+    "老师",
+    "（未标明）",
+    "未知"
+   ]
+  },
+  {
+   "cat": "泳装羁绊",
+   "story": "101226",
+   "story_title": "从蹒跚学步的我开始……",
+   "story_title_jp": "歩み始めた私から……",
+   "turns": 91,
+   "mika": 66,
+   "mika_cjk": 645,
+   "variants": [
+    "미카 수영복"
+   ],
+   "co_stars": [
+    "旁白",
+    "（未标明）",
+    "老师",
+    "未知"
+   ]
+  },
+  {
+   "cat": "泳装羁绊",
+   "story": "101228",
+   "story_title": "致某时某刻的自己",
+   "story_title_jp": "いつかの私へ",
+   "turns": 93,
+   "mika": 59,
+   "mika_cjk": 509,
+   "variants": [
+    "미카 수영복"
+   ],
+   "co_stars": [
+    "未知",
+    "旁白",
+    "（未标明）",
+    "老师"
+   ]
+  },
+  {
+   "cat": "泳装羁绊",
+   "story": "101229",
+   "story_title": "已经，没关系了",
+   "story_title_jp": "もう、大丈夫",
+   "turns": 54,
+   "mika": 42,
+   "mika_cjk": 408,
+   "variants": [
+    "미카 수영복"
+   ],
+   "co_stars": [
+    "老师",
+    "旁白",
+    "未知"
+   ]
+  }
+ ]
+}

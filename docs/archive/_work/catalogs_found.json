@@ -1,0 +1,32 @@
+[
+ [
+  "catalog_Remote.hash",
+  34,
+  "3566616466316432"
+ ],
+ [
+  "catalog_Remote.json",
+  89167698,
+  "7b226d5f4c6f6361"
+ ],
+ [
+  "MediaPatch\\Catalog\\MediaCatalog.bytes",
+  680972,
+  "01a5100000e3ffff"
+ ],
+ [
+  "MediaPatch\\Catalog\\MediaCatalog.hash",
+  12,
+  "3339313031323034"
+ ],
+ [
+  "TableBundles\\Catalog\\TableCatalog.bytes",
+  1019263,
+  "020f000000f5ffff"
+ ],
+ [
+  "TableBundles\\Catalog\\TableCatalog.hash",
+  12,
+  "3130373531323035"
+ ]
+]

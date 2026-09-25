@@ -1,0 +1,119 @@
+{
+  "TableBundles": {
+    "exists": true,
+    "file_count": 6442,
+    "total_bytes": 417599705,
+    "header_histogram": [
+      [
+        "ZIP(PK\\x03\\x04)",
+        6436
+      ],
+      [
+        "other:0915afed",
+        1
+      ],
+      [
+        "other:3b2b629a",
+        1
+      ],
+      [
+        "other:29fcf800",
+        1
+      ],
+      [
+        "other:d6351197",
+        1
+      ],
+      [
+        "other:020f0000",
+        1
+      ],
+      [
+        "other:31303735",
+        1
+      ]
+    ],
+    "examples": {
+      "ZIP(PK\\x03\\x04)": "10001900114910089910_1704857403",
+      "other:0915afed": "12886511902196705184_2695432036",
+      "other:3b2b629a": "2733092781725905578_4094553949",
+      "other:29fcf800": "4354043109159736559_651527683",
+      "other:d6351197": "6993339912994747134_1745771760",
+      "other:020f0000": "Catalog\\TableCatalog.bytes",
+      "other:31303735": "Catalog\\TableCatalog.hash"
+    }
+  },
+  "MediaPatch": {
+    "exists": true,
+    "file_count": 4263,
+    "total_bytes": 6157321913,
+    "header_histogram": [
+      [
+        "other:ffd8ffe0",
+        2184
+      ],
+      [
+        "other:4f676753",
+        1148
+      ],
+      [
+        "other:89504e47",
+        493
+      ],
+      [
+        "ZIP(PK\\x03\\x04)",
+        302
+      ],
+      [
+        "other:0000001c",
+        126
+      ],
+      [
+        "other:ffd8ffe1",
+        8
+      ],
+      [
+        "other:01a51000",
+        1
+      ],
+      [
+        "other:33393130",
+        1
+      ]
+    ],
+    "examples": {
+      "other:ffd8ffe0": "10006798014105879602_1538177547",
+      "other:4f676753": "1002107164915564977_3441083267",
+      "other:89504e47": "10031833379790717669_4208491160",
+      "other:0000001c": "10034896684187335720_1255125747",
+      "ZIP(PK\\x03\\x04)": "10079044180034859417_4240720976",
+      "other:ffd8ffe1": "10342199566077769109_4164962870",
+      "other:01a51000": "Catalog\\MediaCatalog.bytes",
+      "other:33393130": "Catalog\\MediaCatalog.hash"
+    }
+  },
+  "AssetBundles": {
+    "exists": true,
+    "file_count": 26780,
+    "total_bytes": 16566660090,
+    "header_histogram": [
+      [
+        "UnityFS",
+        26778
+      ],
+      [
+        "other:04fcffff",
+        1
+      ],
+      [
+        "other:32313339",
+        1
+      ]
+    ],
+    "examples": {
+      "UnityFS": "academy-_mxload-prefabs-2025-07-02_assets_all_965806563.bundle",
+      "other:04fcffff": "Catalog\\BundlePackingInfo.bytes",
+      "other:32313339": "Catalog\\BundlePackingInfo.hash"
+    }
+  }
+}

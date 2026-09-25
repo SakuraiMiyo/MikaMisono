@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786533553,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 28369,
+        "val": {
+          "turns": 1,
+          "steps": 12,
+          "llmMs": 218296,
+          "toolMs": 7998,
+          "ttftMs": 10350,
+          "ttftSteps": 12,
+          "decodeMs": 207946,
+          "decodeTokens": 28824,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 28369,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 28369,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 28369,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 42016,
+            "outputTokens": 28824,
+            "cacheReadTokens": 346752,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 12,
+            "buckets": {
+              "uncachedInputTokens": 241,
+              "outputTokens": 413,
+              "cacheReadTokens": 55168,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 28369,
+        "val": {
+          "surfaceTokens": 31438,
+          "contextWindow": 1000000,
+          "pressureTokens": 55409,
+          "sampledSurfaceTokens": 31214
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 28369,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 31438
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 28369,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 226653
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 28369,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写05章 串口与printf调试",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 28369,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 28369,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 28369,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 28369,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786533701
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 28369,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 28369,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 28369,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

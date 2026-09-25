@@ -1,0 +1,168 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786565128,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 35247,
+        "val": {
+          "turns": 1,
+          "steps": 13,
+          "llmMs": 278494,
+          "toolMs": 3614,
+          "ttftMs": 10521,
+          "ttftSteps": 13,
+          "decodeMs": 267973,
+          "decodeTokens": 35718,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 35247,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 35247,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 35247,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 53312,
+            "outputTokens": 35718,
+            "cacheReadTokens": 709376,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 13,
+            "buckets": {
+              "uncachedInputTokens": 113,
+              "outputTokens": 482,
+              "cacheReadTokens": 80256,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 35247,
+        "val": {
+          "surfaceTokens": 45982,
+          "contextWindow": 1000000,
+          "pressureTokens": 80369,
+          "sampledSurfaceTokens": 45767
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 35247,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 45982
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 35247,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 282762
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 35247,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写06章 ADC采集详解",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 35247,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 35247,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 35247,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 35247,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786565323
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 35247,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 35247,
+        "val": [
+          {
+            "content": "核对真实源码：cpu0_main.c 与 zf_driver_adc.h（GBK→UTF-8 转码后阅读）",
+            "status": "completed"
+          },
+          {
+            "content": "核对目标目录 TC264 现状与前后章文件名",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 06-ADC采集模拟量.md（遵守全部硬规则）",
+            "status": "completed"
+          },
+          {
+            "content": "自检行数/结构/callout/链接，清理临时文件",
+            "status": "completed"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 35247,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

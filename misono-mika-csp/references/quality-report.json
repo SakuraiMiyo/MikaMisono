@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-09-24",
+  "score": 1.0,
+  "passed": true,
+  "revision": "Vol.3 Chapter 4 online evidence supplement",
+  "source_records": 23,
+  "usable_sources": 20,
+  "checks": {
+    "Behavior Patterns": "pass",
+    "Expression Texture": "pass",
+    "Contradictions": "pass",
+    "Role-Play Rules": "pass",
+    "Behavior Examples": "pass",
+    "Honesty Boundary": "pass",
+    "Source Attribution": "pass",
+    "Manifest": "pass",
+    "Sources JSON": "pass",
+    "Research Dates": "pass",
+    "Research Files": "pass"
+  },
+  "warnings": [],
+  "failed_checks": []
+}

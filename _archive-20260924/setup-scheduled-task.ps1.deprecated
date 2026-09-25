@@ -1,0 +1,15 @@
+﻿$ErrorActionPreference = 'Stop'
+$log = 'C:\OneDrive\MikaMisono\mika-chat\setup-task.log'
+Set-Content -Path $log -Value '' -Encoding UTF8
+function Log($msg) {
+    Add-Content -Path $log -Value ("[{0}] {1}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $msg) -Encoding UTF8
+}
+Log 'bootstrap start'
+$taskName = 'DSHSetupMikaChat'
+$action = New-ScheduledTaskAction -Execute 'powershell.exe' -Argument '-NoProfile -ExecutionPolicy Bypass -File "C:\OneDrive\MikaMisono\mika-chat\setup-mika-chat-dsh.ps1"'
+$trigger = New-ScheduledTaskTrigger -Once -At (Get-Date).AddMinutes(1)
+$principal = New-ScheduledTaskPrincipal -UserId "$env:USERDOMAIN\$env:USERNAME" -LogonType Interactive -RunLevel Highest
+Register-ScheduledTask -TaskName $taskName -Action $action -Trigger $trigger -Principal $principal -Force | Out-Null
+Log 'task registered'
+Start-ScheduledTask -TaskName $taskName
+Log 'task started'

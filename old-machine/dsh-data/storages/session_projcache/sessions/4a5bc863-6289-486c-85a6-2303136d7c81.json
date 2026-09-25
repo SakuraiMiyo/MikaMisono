@@ -1,0 +1,172 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789819571753,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\STC"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 78471,
+        "val": {
+          "turns": 1,
+          "steps": 46,
+          "llmMs": 387182,
+          "toolMs": 6493,
+          "ttftMs": 81369,
+          "ttftSteps": 46,
+          "decodeMs": 305813,
+          "decodeTokens": 80565,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 78471,
+        "val": "你是嵌入式教程作者。任务："
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 78471,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 78471,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 159462,
+            "outputTokens": 80565,
+            "cacheReadTokens": 7056512,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 46,
+            "buckets": {
+              "uncachedInputTokens": 1610,
+              "outputTokens": 1046,
+              "cacheReadTokens": 237952,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 78471,
+        "val": {
+          "surfaceTokens": 139673,
+          "contextWindow": 1000000,
+          "pressureTokens": 239562,
+          "sampledSurfaceTokens": 139207
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 78471,
+        "val": {
+          "systemTokens": 3097,
+          "toolsTokens": 7020,
+          "messageTokens": 139673
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 78471,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 396121
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 78471,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Write chapters 01-03",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 78471,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 78471,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 78471,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 78471,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789819571967
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 78471,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 78471,
+        "val": [
+          {
+            "content": "读取样板章节与全部源码素材",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 01-认识单片机与STC32G144K.md",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 02-环境搭建与烧录.md",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 03-工程模板与启动流程.md",
+            "status": "completed"
+          },
+          {
+            "content": "校验三个文件行数与双链/页脚一致性",
+            "status": "completed"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 78471,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

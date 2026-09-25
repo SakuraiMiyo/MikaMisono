@@ -1,0 +1,156 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789818974138,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\STC"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 147928,
+        "val": {
+          "turns": 7,
+          "steps": 146,
+          "llmMs": 864208,
+          "toolMs": 277831,
+          "ttftMs": 319130,
+          "ttftSteps": 146,
+          "decodeMs": 545078,
+          "decodeTokens": 152585,
+          "lastTurn": 7,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 147928,
+        "val": "STC机器人竞赛例程笔记"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 147928,
+        "val": {
+          "goal": {
+            "id": "goal-773ce90c-3994-4ac3-a466-4ac28df6b056",
+            "revision": 2,
+            "objective": "在 D:\\OneDrive\\ComputerLearning\\STC\\STCNotes\\ 下，按 TC264-Learning 的笔记体系风格（教程式章节 + 主板 M 系列 + 附录精读），把 F:\\机器人竞赛相关资料\\STC 里的逐飞例程整理成完整中文笔记：00~13 章 + 99 索引 + 例程索引 + M01~M06 + 硬件基础 + A1~A5 附录，并完成一致性自检与草稿清理。",
+            "phase": "complete",
+            "maxGoalRounds": 8
+          },
+          "roundsStarted": 4,
+          "createdAt": 1789819480609,
+          "updatedAt": 1789820192825
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 147928,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 293911,
+            "outputTokens": 152585,
+            "cacheReadTokens": 35353088,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 7,
+            "step": 41,
+            "buckets": {
+              "uncachedInputTokens": 536,
+              "outputTokens": 1170,
+              "cacheReadTokens": 408320,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 147928,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 408856,
+          "surfaceTokens": 237140,
+          "sampledSurfaceTokens": 236617
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 147928,
+        "val": {
+          "systemTokens": 2993,
+          "toolsTokens": 6830,
+          "messageTokens": 237140
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 147928,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 147928,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 147928,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 147928,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 147928,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 147928,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789819233308
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 147928,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 147928,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 147928,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

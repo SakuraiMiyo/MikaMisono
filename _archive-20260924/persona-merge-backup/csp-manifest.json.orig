@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "name": "misono-mika",
+  "character": "圣园未花",
+  "work": "蔚蓝档案 / Blue Archive",
+  "aliases": [
+    "聖園ミカ",
+    "Misono Mika",
+    "圣园弥香",
+    "弥香",
+    "Mika"
+  ],
+  "generated_at": "2026-09-24",
+  "research_started_at": "2026-09-24",
+  "research_completed_at": "2026-09-24",
+  "latest_source_checked_at": "2026-09-24",
+  "covered_until": {
+    "date": "2026-09-24",
+    "description": "截至该日期，本地剧情语料、联网补充的 Vol.3 第4章资料、创作者访谈与官方活动页"
+  },
+  "covered_media": [
+    "游戏主线 Vol.3 第1至第3章：本地76个主线JSON",
+    "游戏主线 Vol.3 第4章：27话章节索引、关键剧情摘要与创作者访谈",
+    "原版羁绊剧情 4 话",
+    "泳装羁绊剧情 6 话",
+    "24 篇其他任务剧情（反查材料）",
+    "项目内既有角色、关系、语料与剧情整理资料"
+  ],
+  "not_covered": [
+    "4.5 周年活动《夏空のやくそく》完整原文（当前只有人工概要）",
+    "Vol.3 第4章可本地逐行检索的原始演出JSON",
+    "动画、漫画、广播剧、PV 与社交媒体短篇的系统性覆盖",
+    "2026-09-24 后发布的新剧情、新活动、新访谈、新设定修订"
+  ],
+  "source_count": 20,
+  "source_tiers": {
+    "highest": 9,
+    "medium": 5,
+    "high": 6
+  },
+  "quality_score": 1.0,
+  "honesty_boundary": "Vol.3第4章的章节与事件结构已由多源确认，但尚无本地逐字脚本；不把网络摘要当精确台词。《夏空のやくそく》正式性已确认，完整正文仍未覆盖。",
+  "csp_version": "Character_Skill_Producer main (installed 2026-09-24)"
+}

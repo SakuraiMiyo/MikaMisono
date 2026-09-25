@@ -1,0 +1,168 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786565129,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 50609,
+        "val": {
+          "turns": 1,
+          "steps": 17,
+          "llmMs": 353622,
+          "toolMs": 7397,
+          "ttftMs": 15416,
+          "ttftSteps": 17,
+          "decodeMs": 338206,
+          "decodeTokens": 51214,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 50609,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 50609,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 50609,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 33263,
+            "outputTokens": 51214,
+            "cacheReadTokens": 823296,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 17,
+            "buckets": {
+              "uncachedInputTokens": 121,
+              "outputTokens": 394,
+              "cacheReadTokens": 78592,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 50609,
+        "val": {
+          "surfaceTokens": 43407,
+          "contextWindow": 1000000,
+          "pressureTokens": 78713,
+          "sampledSurfaceTokens": 43220
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 50609,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 43407
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 50609,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 361687
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 50609,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写08章 PIT定时器详解",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 50609,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 50609,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 50609,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 50609,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786565314
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 50609,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 50609,
+        "val": [
+          {
+            "content": "读 E05 cpu0_main.c / isr.c / isr_config.h 源码",
+            "status": "completed"
+          },
+          {
+            "content": "读 E09 cpu0_main.c 与 zf_driver_pit.h / zf_driver_timer.h / version.txt",
+            "status": "completed"
+          },
+          {
+            "content": "撰写 08-定时器PIT与运行节拍.md",
+            "status": "completed"
+          },
+          {
+            "content": "核对行数并汇报",
+            "status": "completed"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 50609,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

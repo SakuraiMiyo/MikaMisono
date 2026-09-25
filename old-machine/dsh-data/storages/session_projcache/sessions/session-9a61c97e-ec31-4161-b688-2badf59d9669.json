@@ -1,0 +1,166 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1787958224960,
+      "cwd": "D:\\OneDrive"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 28754,
+        "val": {
+          "turns": 1,
+          "steps": 26,
+          "llmMs": 256657,
+          "toolMs": 103582,
+          "ttftMs": 28919,
+          "ttftSteps": 26,
+          "decodeMs": 227738,
+          "decodeTokens": 29828,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 28754,
+        "val": "安装Maid Whale WebUI皮肤包"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 28754,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 28754,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 106326,
+            "outputTokens": 29828,
+            "cacheReadTokens": 2105600,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 26,
+            "buckets": {
+              "uncachedInputTokens": 412,
+              "outputTokens": 839,
+              "cacheReadTokens": 125056,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 28754,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 125468,
+          "surfaceTokens": 75271,
+          "sampledSurfaceTokens": 74450
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 28754,
+        "val": {
+          "systemTokens": 3754,
+          "toolsTokens": 6830,
+          "messageTokens": 75271
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 28754,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 28754,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 28754,
+        "val": "standard"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 28754,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 28754,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 28754,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1787958232976
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 28754,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 28754,
+        "val": [
+          {
+            "content": "克隆 dsh-maid-whale-webUI 仓库到工作区",
+            "status": "completed"
+          },
+          {
+            "content": "验证皮肤包目录完整性（lib/skin.json/runtime EXE）",
+            "status": "completed"
+          },
+          {
+            "content": "用 dsh plugin 把皮肤包装进 desktop profile",
+            "status": "in_progress"
+          },
+          {
+            "content": "验证 package.json bundles 与 node_modules 安装结果",
+            "status": "pending"
+          },
+          {
+            "content": "重启 DSH Desktop 使皮肤生效并验证",
+            "status": "pending"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 28754,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

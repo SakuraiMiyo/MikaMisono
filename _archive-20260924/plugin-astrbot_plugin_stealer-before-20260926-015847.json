@@ -1,0 +1,588 @@
+{
+ "name": "astrbot_plugin_stealer",
+ "marketplace_name": "astrbot-plugin-stealer",
+ "repo": "https://github.com/nagatoquin33/astrbot_plugin_stealer",
+ "author": "nagatoquin33",
+ "desc": "人机代码，仿maibot的表情包偷取。让bot自动偷走别人的表情包并为己所用。配置好视觉模型就能自动识别分类，对话时根据情绪自动发送。支持LLM主动选表情包、WebUI管理、存储清理、作用域修复和智能情绪匹配。",
+ "version": "2.6.14",
+ "reserved": false,
+ "activated": false,
+ "online_vesion": "",
+ "display_name": "表情包小偷",
+ "logo": "/api/file/adc285a9-b270-4c1d-9c05-af9a2525352d",
+ "support_platforms": [
+  "aiocqhttp",
+  "telegram"
+ ],
+ "astrbot_version": ">=4.24.1",
+ "installed_at": "2026-08-03T14:46:33.434516+00:00",
+ "i18n": {
+  "en-US": {
+   "metadata": {
+    "display_name": "Emoji Stealer",
+    "short_desc": "Auto-collect and intelligently send stickers",
+    "desc": "Monitors chat images and uses VLM to auto-classify and store them. Intelligently matches and sends stickers based on conversation mood. Supports LLM proactive sticker search, WebUI management, storage cleanup, scope repair, smart emotion matching, and multi-platform compatibility."
+   },
+   "config": {
+    "steal_emoji": {
+     "description": "Enable emoji stealing",
+     "hint": "Monitors and saves images from chat. Requires visual model support."
+    },
+    "steal_mode": {
+     "description": "Steal mode",
+     "hint": "probability=Probability mode: random chance on each received image\ncooldown=Cooldown mode: enforce a minimum interval between collections"
+    },
+    "steal_chance": {
+     "description": "Steal probability (in probability mode)",
+     "hint": "Probability of attempting to collect each received image. 0.0=never, 1.0=always. Recommended: 0.2–0.5"
+    },
+    "image_processing_cooldown": {
+     "description": "Steal cooldown in seconds (in cooldown mode)",
+     "hint": "Minimum interval between two collections in seconds. 0=no limit."
+    },
+    "content_filtration": {
+     "description": "Content filtering (block inappropriate images)",
+     "hint": "Uses VLM to review image content. May increase processing time."
+    },
+    "content_filtration_fail_open": {
+     "description": "Allow import on audit service errors",
+     "hint": "Policy hint for audit-service failures only. Images explicitly rejected by moderation will still not be imported."
+    },
+    "auto_send": {
+     "description": "Auto-send stickers in chat",
+     "hint": "Bot will automatically send stickers during conversation. Test first."
+    },
+    "auto_emoji_intent_gate": {
+     "description": "Auto-send intent gate",
+     "hint": "Skips commands, serious/error replies, very short replies, and question-heavy messages where auto-sending is inappropriate."
+    },
+    "auto_emoji_cancel_on_new_message": {
+     "description": "Cancel pending auto-send on new message",
+     "hint": "Cancels the previous delayed auto-send when a new message arrives in the same session."
+    },
+    "emoji_chance": {
+     "description": "Emoji send probability",
+     "hint": "Probability of auto-sending a sticker. 0.0=never, 1.0=always. Recommended: 0.1–0.3"
+    },
+    "send_emoji_as_gif": {
+     "description": "Send as GIF (native sticker style)",
+     "hint": "On: send as GIF (closer to native sticker style)\nOff: send in original format (png/jpg/gif etc.)\n\nHigh-frequency GIF sending of large images may cause high memory usage."
+    },
+    "emoji_send_delay": {
+     "description": "Emoji send delay in seconds",
+     "hint": "Delay before sending emoji to avoid conflicts with message-segmentation plugins.\nRecommended: ≥ 5.0 s. Set to 0 to send immediately."
+    },
+    "emoji_send_delay_random": {
+     "description": "Random delay",
+     "hint": "On: random delay between [delay] ~ [max delay] for more natural timing\nOff: use fixed delay"
+    },
+    "emoji_send_delay_max": {
+     "description": "Max random delay in seconds",
+     "hint": "Only applies when random delay is enabled. Actual delay = random between [delay] ~ [max]."
+    },
+    "smart_emoji_selection": {
+     "description": "Smart emoji selection",
+     "hint": "On: composite scoring (diversity + relevance + similarity)\nOff: random selection (still avoids short-term repeats)"
+    },
+    "enable_natural_emotion_analysis": {
+     "description": "Emotion recognition mode",
+     "hint": "On: LLM mode (lightweight model analyzes semantics, doesn't modify LLM replies)\nOff: Passive tag mode (LLM inserts emotion tags, modifies reply content)\n\nUse /reset to clear context after switching modes."
+    },
+    "emotion_analysis_provider_id": {
+     "description": "Emotion analysis model (LLM mode)",
+     "hint": "Leave blank to use current session model. A lightweight free model is recommended."
+    },
+    "vision_provider_id": {
+     "description": "Vision model (for image classification)",
+     "hint": "Leave blank to auto-use AstrBot's global default_image_caption_provider_id."
+    },
+    "send_target_whitelist": {
+     "description": "Send target whitelist",
+     "hint": "Format: group:group_id or user:user_id. When non-empty, only whitelisted targets can receive stickers."
+    },
+    "send_target_blacklist": {
+     "description": "Send target blacklist",
+     "hint": "Format: group:group_id or user:user_id. Can be combined with whitelist; priority controls conflict resolution."
+    },
+    "send_target_filter_mode": {
+     "description": "Send filter priority",
+     "hint": "whitelist_first=whitelist takes priority, blacklist_first=blacklist takes priority."
+    },
+    "steal_target_whitelist": {
+     "description": "Steal target whitelist",
+     "hint": "Format: group:group_id or user:user_id. When non-empty, only whitelisted targets allow collection."
+    },
+    "steal_target_blacklist": {
+     "description": "Steal target blacklist",
+     "hint": "Format: group:group_id or user:user_id. Can be combined with whitelist; priority controls conflict resolution."
+    },
+    "steal_target_filter_mode": {
+     "description": "Steal filter priority",
+     "hint": "whitelist_first=whitelist takes priority, blacklist_first=blacklist takes priority."
+    },
+    "max_reg_num": {
+     "description": "Maximum emoji count",
+     "hint": "Storage limit. Old images are removed when the limit is exceeded."
+    },
+    "storage_cleanup_strategy": {
+     "description": "Storage cleanup strategy",
+     "hint": "conservative=clean stale index rows and temp files only, balanced=also clean orphan files and thumbnail cache, aggressive=also clean raw files."
+    },
+    "custom_emoji_classification_prompt": {
+     "description": "VLM classification prompt",
+     "hint": "Edit directly. {emotion_list} will be replaced with the category list. Delete all and save, then reload plugin to restore defaults."
+    },
+    "custom_emoji_classification_with_filter_prompt": {
+     "description": "VLM classification prompt (with filtering)",
+     "hint": "Used when content filtering is enabled. Delete all and save, then reload plugin to restore defaults."
+    },
+    "napcat_token": {
+     "description": "NapCat access token",
+     "hint": "Only needed in special network setups: Docker AstrBot + local NapCat where auto token detection fails. Leave blank to auto-detect from OneBot adapter config."
+    }
+   }
+  },
+  "ru-RU": {
+   "metadata": {
+    "display_name": "Похититель стикеров",
+    "short_desc": "Автоматический сбор и интеллектуальная отправка стикеров",
+    "desc": "Отслеживает изображения в чате и использует VLM для автоматической классификации и сохранения. Интеллектуально подбирает и отправляет стикеры на основе настроения разговора. Поддерживает активный поиск стикеров LLM, WebUI, очистку хранилища, восстановление области действия, умный анализ эмоций и совместимость с несколькими платформами."
+   },
+   "config": {
+    "steal_emoji": {
+     "description": "Включить сбор стикеров",
+     "hint": "При включении плагин будет отслеживать и сохранять изображения из чата. Убедитесь, что доступна визуальная модель."
+    },
+    "steal_mode": {
+     "description": "Режим сбора",
+     "hint": "probability=Режим вероятности: случайный шанс при получении каждого изображения\ncooldown=Режим перезарядки: принудительный минимальный интервал между сбором"
+    },
+    "steal_chance": {
+     "description": "Вероятность сбора (в режиме вероятности)",
+     "hint": "Вероятность попытки сбора при получении каждого изображения. 0.0=никогда, 1.0=всегда. Рекомендуется: 0.2–0.5"
+    },
+    "image_processing_cooldown": {
+     "description": "Время перезарядки сбора, сек (в режиме перезарядки)",
+     "hint": "Минимальный интервал между двумя операциями сбора в секундах. 0=без ограничений."
+    },
+    "content_filtration": {
+     "description": "Модерация контента (блокировка неприемлемых изображений)",
+     "hint": "Использует VLM для проверки содержимого изображений. Может увеличить время обработки."
+    },
+    "content_filtration_fail_open": {
+     "description": "Разрешать импорт при ошибках сервиса модерации",
+     "hint": "Политика только для ошибок сервиса модерации. Изображения, явно отклонённые модерацией, всё равно не будут импортированы."
+    },
+    "auto_send": {
+     "description": "Автоотправка стикеров в чате",
+     "hint": "Бот будет автоматически отправлять стикеры во время разговора. Рекомендуется сначала протестировать."
+    },
+    "auto_emoji_intent_gate": {
+     "description": "Фильтр намерения для автоотправки",
+     "hint": "Пропускает команды, серьёзные ответы/ошибки, слишком короткие ответы и сообщения с большим количеством вопросов, где автоотправка неуместна."
+    },
+    "auto_emoji_cancel_on_new_message": {
+     "description": "Отменять ожидающую автоотправку при новом сообщении",
+     "hint": "Отменяет предыдущую отложенную автоотправку, когда в той же сессии приходит новое сообщение."
+    },
+    "emoji_chance": {
+     "description": "Вероятность отправки стикера",
+     "hint": "Вероятность автоматической отправки стикера. 0.0=никогда, 1.0=всегда. Рекомендуется: 0.1–0.3"
+    },
+    "send_emoji_as_gif": {
+     "description": "Отправлять как GIF (в стиле эмодзи)",
+     "hint": "Вкл.: отправлять в формате GIF (ближе к стилю настоящих стикеров)\nВыкл.: отправлять в исходном формате (png/jpg/gif и т.д.)\n\nВысокочастотная отправка больших GIF может вызвать повышенное потребление памяти."
+    },
+    "emoji_send_delay": {
+     "description": "Задержка перед отправкой стикера, сек",
+     "hint": "Время ожидания перед отправкой стикера, чтобы избежать конфликтов с плагинами сегментации сообщений.\nРекомендуется: ≥ 5.0 с. Установите 0 для мгновенной отправки."
+    },
+    "emoji_send_delay_random": {
+     "description": "Случайная задержка",
+     "hint": "Вкл.: случайная задержка между [задержка] ~ [макс. задержка] для более естественного тайминга\nВыкл.: использовать фиксированную задержку"
+    },
+    "emoji_send_delay_max": {
+     "description": "Максимальная случайная задержка, сек",
+     "hint": "Применяется только при включённой случайной задержке. Фактическая задержка выбирается случайно между [задержка] ~ [макс.]."
+    },
+    "smart_emoji_selection": {
+     "description": "Интеллектуальный выбор стикеров",
+     "hint": "Вкл.: комплексная оценка (разнообразие + релевантность + схожесть)\nВыкл.: случайный выбор (с защитой от краткосрочных повторов)"
+    },
+    "enable_natural_emotion_analysis": {
+     "description": "Режим распознавания эмоций",
+     "hint": "Вкл.: режим LLM (лёгкая модель анализирует семантику, не изменяет ответы LLM)\nВыкл.: пассивный режим меток (LLM вставляет эмоциональные метки, изменяет содержание ответа)\n\nИспользуйте /reset для очистки контекста после смены режима."
+    },
+    "emotion_analysis_provider_id": {
+     "description": "Модель анализа эмоций (режим LLM)",
+     "hint": "Оставьте пустым для использования текущей модели сессии. Рекомендуется лёгкая бесплатная модель."
+    },
+    "vision_provider_id": {
+     "description": "Визуальная модель (для классификации изображений)",
+     "hint": "Оставьте пустым для автоматического использования глобальной модели описания изображений AstrBot."
+    },
+    "send_target_whitelist": {
+     "description": "Белый список отправки",
+     "hint": "Формат: group:ID_группы или user:ID_пользователя. При непустом значении стикеры отправляются только в разрешённые цели."
+    },
+    "send_target_blacklist": {
+     "description": "Чёрный список отправки",
+     "hint": "Формат: group:ID_группы или user:ID_пользователя. Может использоваться совместно с белым списком; приоритет управляет разрешением конфликтов."
+    },
+    "send_target_filter_mode": {
+     "description": "Приоритет фильтра отправки",
+     "hint": "whitelist_first=приоритет у белого списка, blacklist_first=приоритет у чёрного списка."
+    },
+    "steal_target_whitelist": {
+     "description": "Белый список сбора",
+     "hint": "Формат: group:ID_группы или user:ID_пользователя. При непустом значении сбор возможен только из разрешённых целей."
+    },
+    "steal_target_blacklist": {
+     "description": "Чёрный список сбора",
+     "hint": "Формат: group:ID_группы или user:ID_пользователя. Может использоваться совместно с белым списком; приоритет управляет разрешением конфликтов."
+    },
+    "steal_target_filter_mode": {
+     "description": "Приоритет фильтра сбора",
+     "hint": "whitelist_first=приоритет у белого списка, blacklist_first=приоритет у чёрного списка."
+    },
+    "max_reg_num": {
+     "description": "Максимальное количество стикеров",
+     "hint": "Лимит хранилища. При превышении старые изображения автоматически удаляются."
+    },
+    "storage_cleanup_strategy": {
+     "description": "Стратегия очистки хранилища",
+     "hint": "conservative=очищать только устаревший индекс и временные файлы, balanced=также очищать файлы-сироты и кэш миниатюр, aggressive=также очищать raw-файлы."
+    },
+    "custom_emoji_classification_prompt": {
+     "description": "Промпт классификации VLM",
+     "hint": "Можно редактировать напрямую. {emotion_list} будет заменён на список категорий. Восстановить по умолчанию: удалить всё содержимое, сохранить и перезагрузить плагин."
+    },
+    "custom_emoji_classification_with_filter_prompt": {
+     "description": "Промпт классификации VLM (с модерацией)",
+     "hint": "Используется при включённой модерации контента. Восстановить по умолчанию: удалить всё содержимое, сохранить и перезагрузить плагин."
+    },
+    "napcat_token": {
+     "description": "Токен доступа NapCat",
+     "hint": "Требуется только в специальных сетевых конфигурациях: Docker AstrBot + локальный NapCat, когда автоматическое определение токена не работает. Оставьте пустым для автоматического извлечения из конфигурации адаптера OneBot."
+    }
+   }
+  },
+  "zh-CN": {
+   "metadata": {
+    "display_name": "表情包小偷",
+    "short_desc": "自动偷取并智能发送表情包",
+    "desc": "监听聊天中的图片并使用 VLM 自动分类存储，对话时根据情绪智能匹配并发送表情包。支持 LLM 主动搜索表情包、WebUI 管理面板、存储清理、作用域修复、智能情绪匹配和多平台适配。"
+   },
+   "config": {
+    "steal_emoji": {
+     "description": "开启表情包偷取功能",
+     "hint": "开启后会监听并保存聊天中的图片，请确保有视觉模型支持"
+    },
+    "steal_mode": {
+     "description": "偷图模式",
+     "hint": "probability=概率模式：每次收到图片按概率决定是否偷取\ncooldown=冷却模式：两次偷取之间必须间隔指定秒数"
+    },
+    "steal_chance": {
+     "description": "偷图概率（概率模式生效）",
+     "hint": "概率模式下每次收到图片时尝试偷取的概率，0.0=从不偷取，1.0=每次都偷。建议 0.2-0.5"
+    },
+    "image_processing_cooldown": {
+     "description": "偷图冷却时间/秒（冷却模式生效）",
+     "hint": "冷却模式下两次偷取之间的最小间隔（秒）。0=不限制"
+    },
+    "content_filtration": {
+     "description": "内容审核（过滤不当图片）",
+     "hint": "开启后会使用 VLM 审核图片内容，可能增加处理时间"
+    },
+    "content_filtration_fail_open": {
+     "description": "内容审核异常时允许入库",
+     "hint": "仅作为审核服务异常时的策略提示；明确审核不通过的图片仍不会入库"
+    },
+    "auto_send": {
+     "description": "自动随聊发送表情包",
+     "hint": "开启后 Bot 会在聊天中自动发送表情包，建议先测试效果"
+    },
+    "auto_emoji_intent_gate": {
+     "description": "自动表情意图门控",
+     "hint": "开启后会跳过命令、严肃错误回复、过短回复和连续提问等不适合自动发图的场景"
+    },
+    "auto_emoji_cancel_on_new_message": {
+     "description": "新消息取消待发送表情",
+     "hint": "开启后同一会话有新消息到达时，会取消上一轮仍在延迟等待中的自动表情"
+    },
+    "emoji_chance": {
+     "description": "表情包发送概率",
+     "hint": "自动发送表情包的概率，0.0=从不发送，1.0=每次都发送，建议 0.1-0.3"
+    },
+    "send_emoji_as_gif": {
+     "description": "真表情包样式（GIF发送）",
+     "hint": "开启：以 GIF 输出（更接近真表情包样式）\n关闭：按原文件格式发送（png/jpg/gif 等）\n\n开启后高频发送大图/动图场景会有较高瞬时内存占用"
+    },
+    "emoji_send_delay": {
+     "description": "表情包发送延迟/秒",
+     "hint": "等待此时间后发送表情包，避免与分段插件冲突\n建议 5.0 秒以上，让分段先发完\n设为 0 则立即发送"
+    },
+    "emoji_send_delay_random": {
+     "description": "随机延迟",
+     "hint": "开启：在 [延迟] ~ [最大延迟] 之间随机等待，更自然\n关闭：使用固定延迟"
+    },
+    "emoji_send_delay_max": {
+     "description": "随机延迟最大值/秒",
+     "hint": "仅随机延迟开启时生效，实际延迟在 [延迟] ~ [最大值] 之间随机"
+    },
+    "smart_emoji_selection": {
+     "description": "智能表情包选择",
+     "hint": "开启=综合评分选择（多样性+匹配度+相似度）\n关闭=随机选择（仍会避免短期重复）"
+    },
+    "enable_natural_emotion_analysis": {
+     "description": "情绪识别模式",
+     "hint": "开启=LLM模式（轻量模型分析语义，不修改LLM回复）\n关闭=被动标签模式（LLM插入情绪标签，会修改回复内容）\n\n切换模式后建议使用 /reset 清除对话上下文"
+    },
+    "emotion_analysis_provider_id": {
+     "description": "情绪分析专用模型（LLM模式）",
+     "hint": "留空则使用当前会话模型，建议使用轻量免费模型，小参数量模型即可胜任"
+    },
+    "vision_provider_id": {
+     "description": "视觉模型（用于图片分类）",
+     "hint": "留空则自动使用 AstrBot 全局配置的「图片描述模型」(default_image_caption_provider_id)"
+    },
+    "send_target_whitelist": {
+     "description": "发表情白名单",
+     "hint": "格式：group:群号 或 user:QQ号。非空时仅白名单目标可通过"
+    },
+    "send_target_blacklist": {
+     "description": "发表情黑名单",
+     "hint": "格式：group:群号 或 user:QQ号。可与白名单同时生效，冲突时按优先级判定"
+    },
+    "send_target_filter_mode": {
+     "description": "发表情名单优先级",
+     "hint": "允许白名单和黑名单同时生效。whitelist_first=白名单优先，blacklist_first=黑名单优先"
+    },
+    "steal_target_whitelist": {
+     "description": "偷表情白名单",
+     "hint": "格式：group:群号 或 user:QQ号。非空时仅白名单目标可通过"
+    },
+    "steal_target_blacklist": {
+     "description": "偷表情黑名单",
+     "hint": "格式：group:群号 或 user:QQ号。可与白名单同时生效，冲突时按优先级判定"
+    },
+    "steal_target_filter_mode": {
+     "description": "偷表情名单优先级",
+     "hint": "允许白名单和黑名单同时生效。whitelist_first=白名单优先，blacklist_first=黑名单优先"
+    },
+    "max_reg_num": {
+     "description": "最大表情包数量",
+     "hint": "表情包存储上限，超过后自动清理旧表情包"
+    },
+    "storage_cleanup_strategy": {
+     "description": "存储清理策略",
+     "hint": "conservative=只清理失效索引和临时文件，balanced=额外清理孤儿文件和缩略图缓存，aggressive=额外清理 raw 目录"
+    },
+    "custom_emoji_classification_prompt": {
+     "description": "VLM 分类提示词",
+     "hint": "可直接编辑修改。{emotion_list} 会被替换为分类列表。恢复默认：删除全部内容后保存，重启插件"
+    },
+    "custom_emoji_classification_with_filter_prompt": {
+     "description": "VLM 分类提示词（带审核）",
+     "hint": "可直接编辑修改。开启内容审核时使用。恢复默认：删除全部内容后保存，重启插件"
+    },
+    "napcat_token": {
+     "description": "NapCat 访问令牌",
+     "hint": "仅在特殊网络环境下需要：Docker 部署 AstrBot + 本地部署 NapCat 时，如果自动获取 token 失败，可手动填写此项。留空则自动从 OneBot 适配器配置中获取"
+    }
+   }
+  }
+ },
+ "root_dir_name": "astrbot_plugin_stealer",
+ "install_source": {
+  "schema_version": 1,
+  "root_dir_name": "astrbot_plugin_stealer",
+  "install_method": "market",
+  "registry_url": null,
+  "registry_name": "Default",
+  "repo": "https://github.com/nagatoquin33/astrbot_plugin_stealer",
+  "download_url": "",
+  "implicit": true,
+  "name": "astrbot_plugin_stealer",
+  "marketplace_name": "astrbot-plugin-stealer"
+ },
+ "updates_enabled": true,
+ "update_disabled_reason": "",
+ "components": [
+  {
+   "type": "page",
+   "name": "表情管理",
+   "title": "表情管理",
+   "page_name": "表情管理",
+   "i18n_key": "pages.表情管理",
+   "description": "Plugin Page entry",
+   "plugin_name": "astrbot_plugin_stealer",
+   "plugin_marketplace_name": "astrbot-plugin-stealer"
+  },
+  {
+   "type": "command",
+   "name": "meme",
+   "description": "表情包管理指令",
+   "subcommands": [
+    {
+     "name": "on",
+     "description": "开启表情包偷取功能，自动收集群聊中的表情包。",
+     "type": "command"
+    },
+    {
+     "name": "off",
+     "description": "关闭表情包偷取功能，停止收集新表情包。",
+     "type": "command"
+    },
+    {
+     "name": "auto_on",
+     "description": "开启自动发送表情包，聊天时根据情绪自动发送。",
+     "type": "command"
+    },
+    {
+     "name": "auto_off",
+     "description": "关闭自动发送表情包。",
+     "type": "command"
+    },
+    {
+     "name": "group",
+     "description": "管理群聊黑白名单。用法: /meme group <wl|bl> <add|del|clear|show> [群号]",
+     "type": "command"
+    },
+    {
+     "name": "偷",
+     "description": "进入强制接收模式，30秒内发送的图片将直接入库。",
+     "type": "command"
+    },
+    {
+     "name": "natural_analysis",
+     "description": "切换情绪识别模式。用法: /meme natural_analysis <on|off>",
+     "type": "command"
+    },
+    {
+     "name": "emotion_stats",
+     "description": "查看情绪分析统计信息和当前模式。",
+     "type": "command"
+    },
+    {
+     "name": "clear_emotion_cache",
+     "description": "清空情绪分析缓存，释放内存。",
+     "type": "command"
+    },
+    {
+     "name": "status",
+     "description": "查看插件运行状态和表情包统计信息。",
+     "type": "command"
+    },
+    {
+     "name": "clean",
+     "description": "清理原始图片缓存（不影响已分类的表情包）。",
+     "type": "command"
+    },
+    {
+     "name": "capacity",
+     "description": "立即执行容量控制，清理超出上限的旧表情包。",
+     "type": "command"
+    },
+    {
+     "name": "list",
+     "description": "列出已收集的表情包。用法: /meme list [分类] [数量]",
+     "type": "command"
+    },
+    {
+     "name": "delete",
+     "description": "删除指定表情包。用法: /meme delete <序号|文件名>",
+     "type": "command"
+    },
+    {
+     "name": "blacklist",
+     "description": "拉黑指定表情包。用法: /meme blacklist <序号|文件名>",
+     "type": "command"
+    },
+    {
+     "name": "scope",
+     "description": "设置表情包作用域。用法: /meme scope <序号|文件名> <public|local>",
+     "type": "command"
+    },
+    {
+     "name": "rebuild_index",
+     "description": "重建表情包索引，用于修复索引异常或版本迁移。",
+     "type": "command"
+    }
+   ],
+   "event_type": "AdapterMessageEvent",
+   "event_type_h": "平台消息下发时",
+   "handler_name": "meme",
+   "has_admin": false,
+   "display_type": "指令组",
+   "command": "meme"
+  },
+  {
+   "type": "llm_tool",
+   "name": "search_emoji",
+   "description": "搜索表情包候选，并优先按你当前心情词进行匹配。\n\n        Args:\n            query(string): 你当前心情的代表词（也支持描述词、场景词）\n\n        使用建议：\n        - 先判断你此刻最能代表自己的心情词（例如：开心、无语、尴尬、感谢）\n        - 再用该心情词调用本工具搜索候选\n        - 若无结果，可换同义词再搜索（如\"无语\"->\"dumb/尴尬\"）\n\n        返回值：\n        返回候选表情包列表，每个包含：\n        - 编号：用于调用 send_emoji_by_id\n        - 分类：表情包的情绪分类\n        - 描述：表情包的详细描述（这是你选择时的重要参考）\n\n        请先锁定\"当前心情词\"，再仔细阅读候选描述，选择最能代表你当前心情与语气的一张。",
+   "event_type": "OnCallingFuncToolEvent",
+   "event_type_h": "函数工具",
+   "handler_full_name": "data.plugins.astrbot_plugin_stealer.main_search_emoji",
+   "handler_name": "search_emoji",
+   "cmd": "自动触发",
+   "display_type": "无"
+  },
+  {
+   "type": "llm_tool",
+   "name": "send_emoji_by_id",
+   "description": "发送你选择的表情包。必须先调用 search_emoji 获取候选列表。\n\n        选择原则：优先发送能代表你\"当前心情词\"的候选项。\n\n        Args:\n            emoji_id(number): 表情包编号（从 search_emoji 返回的列表中选择）",
+   "event_type": "OnCallingFuncToolEvent",
+   "event_type_h": "函数工具",
+   "handler_full_name": "data.plugins.astrbot_plugin_stealer.main_send_emoji_by_id",
+   "handler_name": "send_emoji_by_id",
+   "cmd": "自动触发",
+   "display_type": "无"
+  },
+  {
+   "type": "llm_tool",
+   "name": "steal_sticker",
+   "description": "偷取图片入库。VLM 视觉模型会自动分析图片，打上分类、标签、描述和场景。\n\n        使用时机：\n        - 用户说\"偷一下\"/\"收了这张图\"时直接调用本工具。\n        - 你看到当前消息里有适合作为表情包的图片时，也可以调用本工具补充素材库。\n\n        注意：\n        - image_ref 必须从当前消息中已有的图片 URL 或文件路径中选择，必填。\n        - 不需要自己打标，工具会交给 VLM 自动完成分类、标签、描述和场景分析。\n        - 工具返回的 VLM 分析结果可用于向用户说明偷到了什么。\n        - 当插件的表情包偷取总开关关闭，或当前会话被偷取黑白名单禁用时，本工具会拒绝入库。\n\n        Args:\n            image_ref(string): 图片 URL 或文件路径，从当前消息已有的 Image URL 中选择。",
+   "event_type": "OnCallingFuncToolEvent",
+   "event_type_h": "函数工具",
+   "handler_full_name": "data.plugins.astrbot_plugin_stealer.main_steal_sticker",
+   "handler_name": "steal_sticker",
+   "cmd": "自动触发",
+   "display_type": "无"
+  },
+  {
+   "type": "listener",
+   "name": "on_message",
+   "description": "消息监听：偷取消息中的图片并分类存储。",
+   "event_type": "AdapterMessageEvent",
+   "event_type_h": "平台消息下发时",
+   "handler_full_name": "data.plugins.astrbot_plugin_stealer.main_on_message",
+   "handler_name": "on_message",
+   "has_admin": false,
+   "cmd": "未知",
+   "display_type": "事件监听器"
+  },
+  {
+   "type": "hook",
+   "name": "_prepare_emoji_response",
+   "description": "清理情绪标签并异步发送表情包（不阻塞回复）。",
+   "event_type": "OnDecoratingResultEvent",
+   "event_type_h": "回复消息前",
+   "handler_full_name": "data.plugins.astrbot_plugin_stealer.main__prepare_emoji_response",
+   "handler_name": "_prepare_emoji_response",
+   "cmd": "自动触发",
+   "display_type": "无"
+  },
+  {
+   "type": "hook",
+   "name": "_inject_emotion_instruction",
+   "description": "在 LLM 请求时动态注入被动标签模式的情绪选择指令。\n\n        使用 extra_user_content_parts 追加指令，避免修改 system_prompt\n        破坏 LLM 提供商的提示词缓存。",
+   "event_type": "OnLLMRequestEvent",
+   "event_type_h": "LLM 请求时",
+   "handler_full_name": "data.plugins.astrbot_plugin_stealer.main__inject_emotion_instruction",
+   "handler_name": "_inject_emotion_instruction",
+   "cmd": "自动触发",
+   "display_type": "无"
+  }
+ ]
+}

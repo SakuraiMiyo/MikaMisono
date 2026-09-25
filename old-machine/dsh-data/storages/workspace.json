@@ -1,0 +1,154 @@
+{
+  "unit": {
+    "name": "workspace",
+    "version": 2
+  },
+  "global": {
+    "initialized": true,
+    "workspaceIds": [
+      "48f467ed-bd3e-4463-8f26-62a094b86397",
+      "c893f58d-da4e-4fe1-812d-11896cecfa0c",
+      "4cc10e27-eded-4320-9a7c-d3342e7f8cbf",
+      "03d96779-e2af-45cf-a319-59411188547b",
+      "72005038-1164-495b-8cf2-a0f153974f5c",
+      "f2aa9118-7d4a-4d62-a2e4-a4387c6f5275",
+      "7f791934-eb15-4c8b-9ad1-124ae9690c6d",
+      "6cd62035-e8a6-46e6-b296-c72b544c76c4",
+      "02eaed4a-3cc3-4ed2-981f-65d2ed3a3b1b",
+      "e108cfba-9fa4-40bf-a026-37883f8fae2e",
+      "1184e594-b6af-45e3-8b9f-e4f9dce25f9a"
+    ],
+    "archivedSessionIds": [
+      "session-2419ad37-6186-4ec8-b846-162cdaf346a7",
+      "session-20da8271-6b6c-4b01-ad9a-94fd8d519ef7",
+      "session-c5fe23ac-deb7-4b1a-95af-7b8f5bc614b8",
+      "session-f5502e3b-b953-4436-8424-3da46019921a",
+      "session-931cd18e-1fbb-4ca3-b87e-33a5c084a212",
+      "session-7e235760-e646-48c8-aa24-2c10fe35c48b",
+      "session-e34649d1-9c05-41ce-a64d-c71dbce35ef5"
+    ]
+  },
+  "tables": {
+    "workspaces": {
+      "1184e594-b6af-45e3-8b9f-e4f9dce25f9a": {
+        "path": "D:\\OneDrive",
+        "title": "OneDrive",
+        "sessionIds": [
+          "session-db7271f1-50b7-4323-a25d-2bfb48a1bcda",
+          "session-448b8b1e-77ae-427a-b642-b3a539e21cf6",
+          "session-3c44fc6d-2983-49d9-808f-2035cb2237b7",
+          "session-63d5e592-b8e8-4aab-8613-daaccf7a07b4",
+          "session-931cd18e-1fbb-4ca3-b87e-33a5c084a212",
+          "session-f5502e3b-b953-4436-8424-3da46019921a",
+          "session-1c4a867f-37e7-4e27-a930-e01cdf20aa2b",
+          "session-9a61c97e-ec31-4161-b688-2badf59d9669",
+          "session-2419ad37-6186-4ec8-b846-162cdaf346a7",
+          "session-20da8271-6b6c-4b01-ad9a-94fd8d519ef7",
+          "session-3bd95c6f-4bb1-4550-b807-542f3d73aaf9",
+          "session-c5fe23ac-deb7-4b1a-95af-7b8f5bc614b8"
+        ],
+        "createdAt": "2026-08-28T22:02:48.364Z",
+        "updatedAt": "2026-09-09T04:48:34.796Z"
+      },
+      "e108cfba-9fa4-40bf-a026-37883f8fae2e": {
+        "path": "D:\\OneDrive\\MikaMisono",
+        "title": "MikaMisono",
+        "sessionIds": [
+          "session-90462434-0473-4e90-9aa3-89b5030009ed",
+          "session-8a709cbd-1410-42d5-a242-70ac4f9bfabd",
+          "session-cd21d7b9-2b02-4576-aede-8d2abfc9a81b"
+        ],
+        "createdAt": "2026-09-07T10:33:46.429Z",
+        "updatedAt": "2026-09-07T10:54:43.110Z"
+      },
+      "02eaed4a-3cc3-4ed2-981f-65d2ed3a3b1b": {
+        "path": "D:\\OneDrive\\ObsidianNotes",
+        "title": "ObsidianNotes",
+        "sessionIds": [
+          "session-51ad9ec6-be92-4db2-a52d-ac227a07e5e7",
+          "session-47bd3300-c5d9-4b2b-959d-8ac495ed0670"
+        ],
+        "createdAt": "2026-09-07T12:10:29.638Z",
+        "updatedAt": "2026-09-07T13:39:33.602Z"
+      },
+      "6cd62035-e8a6-46e6-b296-c72b544c76c4": {
+        "path": "D:\\OneDrive\\碧蓝档案\\总力战\\BAMT",
+        "title": "BAMT",
+        "sessionIds": [
+          "session-e34649d1-9c05-41ce-a64d-c71dbce35ef5",
+          "session-7e235760-e646-48c8-aa24-2c10fe35c48b"
+        ],
+        "createdAt": "2026-09-09T04:49:23.456Z",
+        "updatedAt": "2026-09-09T04:51:08.596Z"
+      },
+      "7f791934-eb15-4c8b-9ad1-124ae9690c6d": {
+        "path": "C:\\Users\\Misono Mika\\Desktop\\PGP修复",
+        "title": "PGP修复",
+        "sessionIds": [
+          "session-560c6d68-018d-4dee-b11f-efebfcfd1704"
+        ],
+        "createdAt": "2026-09-10T18:50:27.601Z",
+        "updatedAt": "2026-09-10T18:50:27.692Z"
+      },
+      "f2aa9118-7d4a-4d62-a2e4-a4387c6f5275": {
+        "path": "D:\\OneDrive\\ComputerLearning\\TC264-Learning",
+        "title": "TC264-Learning",
+        "sessionIds": [
+          "session-674b4a9d-41e8-4b14-ba5b-e59dec637d89",
+          "session-474942e2-de06-49ac-8f4e-064e0c0fccc4"
+        ],
+        "createdAt": "2026-09-13T12:32:37.430Z",
+        "updatedAt": "2026-09-14T06:01:44.728Z"
+      },
+      "72005038-1164-495b-8cf2-a0f153974f5c": {
+        "path": "D:\\OneDrive\\ComputerLearning\\PCB_Design",
+        "title": "PCB_Design",
+        "sessionIds": [
+          "session-85ecea54-5ff5-4f59-9834-2e740128901c",
+          "session-be29e72f-8aa2-4165-9cda-1be0d58103fe"
+        ],
+        "createdAt": "2026-09-15T12:49:04.313Z",
+        "updatedAt": "2026-09-19T11:53:04.748Z"
+      },
+      "03d96779-e2af-45cf-a319-59411188547b": {
+        "path": "D:\\OneDrive\\ComputerLearning\\STC",
+        "title": "STC",
+        "sessionIds": [
+          "session-e63c1e9d-3db0-475a-8040-d0a7c8162e4a",
+          "session-b1ada3f4-f7ae-4a8e-a4bc-8c1c876a2595"
+        ],
+        "createdAt": "2026-09-19T11:56:14.074Z",
+        "updatedAt": "2026-09-21T06:12:24.905Z"
+      },
+      "4cc10e27-eded-4320-9a7c-d3342e7f8cbf": {
+        "path": "D:\\OneDrive\\大学课程学习\\认识实习\\软件方向",
+        "title": "软件方向",
+        "sessionIds": [
+          "session-145e8bf8-6745-4d6a-acb7-237103e8cf1c",
+          "session-b0a275b7-2e5b-450c-833f-5b5eb7d8b7b4"
+        ],
+        "createdAt": "2026-09-21T06:12:35.511Z",
+        "updatedAt": "2026-09-21T12:09:42.930Z"
+      },
+      "c893f58d-da4e-4fe1-812d-11896cecfa0c": {
+        "path": "D:\\OneDrive\\项目\\工创",
+        "title": "工创",
+        "sessionIds": [
+          "session-4ffae5a4-d05d-4709-8756-140bf5255bae",
+          "session-49987ba0-78b7-4c95-be63-a9671b2cba3e"
+        ],
+        "createdAt": "2026-09-21T12:09:52.932Z",
+        "updatedAt": "2026-09-22T06:05:31.676Z"
+      },
+      "48f467ed-bd3e-4463-8f26-62a094b86397": {
+        "path": "D:\\OneDrive\\大学课程学习\\认识实习\\软件方向\\0922表格2",
+        "title": "0922表格2",
+        "sessionIds": [
+          "session-b8c11071-1e13-471d-983f-48d769de167d"
+        ],
+        "createdAt": "2026-09-22T06:06:29.571Z",
+        "updatedAt": "2026-09-22T06:06:29.664Z"
+      }
+    }
+  }
+}

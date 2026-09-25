@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789819571755,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\STC"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 87271,
+        "val": {
+          "turns": 1,
+          "steps": 47,
+          "llmMs": 403461,
+          "toolMs": 5581,
+          "ttftMs": 80949,
+          "ttftSteps": 47,
+          "decodeMs": 322512,
+          "decodeTokens": 89528,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 87271,
+        "val": "你是嵌入式教程作者。任务："
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 87271,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 87271,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 156850,
+            "outputTokens": 89528,
+            "cacheReadTokens": 6944768,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 47,
+            "buckets": {
+              "uncachedInputTokens": 212,
+              "outputTokens": 993,
+              "cacheReadTokens": 243584,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 87271,
+        "val": {
+          "surfaceTokens": 135417,
+          "contextWindow": 1000000,
+          "pressureTokens": 243796,
+          "sampledSurfaceTokens": 134991
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 87271,
+        "val": {
+          "systemTokens": 3097,
+          "toolsTokens": 7020,
+          "messageTokens": 135417
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 87271,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 411111
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 87271,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Write M01-M03 motherboard notes",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 87271,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 87271,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 87271,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 87271,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789819571972
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 87271,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 87271,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 87271,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

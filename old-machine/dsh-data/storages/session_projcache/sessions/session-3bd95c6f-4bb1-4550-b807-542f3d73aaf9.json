@@ -1,0 +1,145 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1787955621915,
+      "cwd": "D:\\OneDrive"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 199910,
+        "val": {
+          "turns": 17,
+          "steps": 206,
+          "llmMs": 1769654,
+          "toolMs": 11253764,
+          "ttftMs": 293413,
+          "ttftSteps": 205,
+          "decodeMs": 1476241,
+          "decodeTokens": 204703,
+          "lastTurn": 17,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 199910,
+        "val": "崩溃的求助"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 199910,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 199910,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 937577,
+            "outputTokens": 204703,
+            "cacheReadTokens": 43880192,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 17,
+            "step": 3,
+            "buckets": {
+              "uncachedInputTokens": 159,
+              "outputTokens": 904,
+              "cacheReadTokens": 358912,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 199910,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 359071,
+          "surfaceTokens": 289108,
+          "sampledSurfaceTokens": 288572
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 199910,
+        "val": {
+          "systemTokens": 3751,
+          "toolsTokens": 6830,
+          "messageTokens": 289108
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 199910,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 199910,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 199910,
+        "val": "standard"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 199910,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 199910,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 199910,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1787963949970
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 199910,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 199910,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 199910,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+# 依赖与模型缓存（体积大，勿入版本库/减少 OneDrive 同步负担）
+node_modules/
+.cache/
+
+# 向量库产物（可随时 --rebuild 重建）
+memory/index/
+
+# 系统文件
+.DS_Store
+Thumbs.db

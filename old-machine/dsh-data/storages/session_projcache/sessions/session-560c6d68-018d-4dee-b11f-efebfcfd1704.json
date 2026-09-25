@@ -1,0 +1,145 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789066227657,
+      "cwd": "C:\\Users\\Misono Mika\\Desktop\\PGP修复"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 81015,
+        "val": {
+          "turns": 7,
+          "steps": 73,
+          "llmMs": 381123,
+          "toolMs": 835753,
+          "ttftMs": 64987,
+          "ttftSteps": 73,
+          "decodeMs": 316136,
+          "decodeTokens": 83254,
+          "lastTurn": 7,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 81015,
+        "val": "PGP急救包脚本使用说明"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 81015,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 81015,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 74666,
+            "outputTokens": 83254,
+            "cacheReadTokens": 4484608,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 7,
+            "step": 19,
+            "buckets": {
+              "uncachedInputTokens": 136,
+              "outputTokens": 1165,
+              "cacheReadTokens": 133888,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 81015,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 134024,
+          "surfaceTokens": 85512,
+          "sampledSurfaceTokens": 84719
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 81015,
+        "val": {
+          "systemTokens": 2995,
+          "toolsTokens": 6830,
+          "messageTokens": 85512
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 81015,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 81015,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 81015,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 81015,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 81015,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4.1-flash-expires-on-0910",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 81015,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789377424098
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 81015,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 81015,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 81015,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

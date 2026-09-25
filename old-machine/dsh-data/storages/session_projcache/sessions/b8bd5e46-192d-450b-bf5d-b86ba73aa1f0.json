@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788929512194,
+      "cwd": "D:\\OneDrive\\碧蓝档案\\总力战\\BAMT"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 22504,
+        "val": {
+          "turns": 1,
+          "steps": 26,
+          "llmMs": 92608,
+          "toolMs": 6113,
+          "ttftMs": 19695,
+          "ttftSteps": 26,
+          "decodeMs": 72913,
+          "decodeTokens": 23792,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 22504,
+        "val": "You are auditing the frontend"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 22504,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 22504,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 153442,
+            "outputTokens": 23792,
+            "cacheReadTokens": 2339328,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 26,
+            "buckets": {
+              "uncachedInputTokens": 177,
+              "outputTokens": 3348,
+              "cacheReadTokens": 169472,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 22504,
+        "val": {
+          "surfaceTokens": 137229,
+          "contextWindow": 1000000,
+          "pressureTokens": 169649,
+          "sampledSurfaceTokens": 134590
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 22504,
+        "val": {
+          "systemTokens": 1863,
+          "toolsTokens": 7020,
+          "messageTokens": 137229
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 22504,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 99309
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 22504,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Audit frontend architecture",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 22504,
+        "val": "standard"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 22504,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 22504,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4.1-flash-expires-on-0910",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 22504,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788929512256
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 22504,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 22504,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 22504,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

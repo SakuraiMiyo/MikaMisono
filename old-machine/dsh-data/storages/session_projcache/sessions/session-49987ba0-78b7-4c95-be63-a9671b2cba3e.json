@@ -1,0 +1,156 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789992593006,
+      "cwd": "D:\\OneDrive\\项目\\工创"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 1234923,
+        "val": {
+          "turns": 61,
+          "steps": 875,
+          "llmMs": 6818811,
+          "toolMs": 1483057,
+          "ttftMs": 2081460,
+          "ttftSteps": 874,
+          "decodeMs": 4737351,
+          "decodeTokens": 1265874,
+          "lastTurn": 61,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 1234923,
+        "val": "工创赛分拣赛题设计"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 1234923,
+        "val": {
+          "goal": {
+            "id": "goal-a67fd731-b17a-4447-9dab-632fefe1e50a",
+            "revision": 1,
+            "objective": "完成2027年第十届工创赛「智能+工程创新赛道·智能分拣赛项」的参赛作品设计：产出赛题拆解、机构方案、BOM、控制/视觉架构，以及任务命题文档与作品创意设计所需的全部设计材料。",
+            "phase": "active",
+            "maxGoalRounds": 30
+          },
+          "roundsStarted": 0,
+          "createdAt": 1789992777022,
+          "updatedAt": 1789992777022
+        }
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 1234923,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 1582012,
+            "outputTokens": 1265874,
+            "cacheReadTokens": 385031680,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 61,
+            "step": 10,
+            "buckets": {
+              "uncachedInputTokens": 228,
+              "outputTokens": 1842,
+              "cacheReadTokens": 327296,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 1234923,
+        "val": {
+          "contextWindow": 1000000,
+          "pressureTokens": 327524,
+          "surfaceTokens": 197669,
+          "sampledSurfaceTokens": 196627
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 1234923,
+        "val": {
+          "systemTokens": 2989,
+          "toolsTokens": 6830,
+          "messageTokens": 197669
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 1234923,
+        "val": {
+          "settledMs": 0,
+          "descriptorSeen": false
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 1234923,
+        "val": {}
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 1234923,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 1234923,
+        "val": {
+          "preset": "workspace-write",
+          "sandbox": "workspace-write",
+          "approval": "ask"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 1234923,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 1234923,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1790167614916
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 1234923,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 1234923,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 1234923,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

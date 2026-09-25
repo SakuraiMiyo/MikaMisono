@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1790048279006,
+      "cwd": "D:\\OneDrive\\项目\\工创"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 26480,
+        "val": {
+          "turns": 1,
+          "steps": 10,
+          "llmMs": 119612,
+          "toolMs": 822,
+          "ttftMs": 7175,
+          "ttftSteps": 10,
+          "decodeMs": 112437,
+          "decodeTokens": 26911,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 26480,
+        "val": "你是一个严格的规则核对员。"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 26480,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 26480,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 30284,
+            "outputTokens": 26911,
+            "cacheReadTokens": 240896,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 10,
+            "buckets": {
+              "uncachedInputTokens": 7012,
+              "outputTokens": 426,
+              "cacheReadTokens": 46464,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 26480,
+        "val": {
+          "surfaceTokens": 21693,
+          "contextWindow": 1000000,
+          "pressureTokens": 53476,
+          "sampledSurfaceTokens": 21517
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 26480,
+        "val": {
+          "systemTokens": 3094,
+          "toolsTokens": 7020,
+          "messageTokens": 21693
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 26480,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 120799
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 26480,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "核对规则与设计文档差异",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 26480,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 26480,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 26480,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 26480,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1790048279193
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 26480,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 26480,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 26480,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

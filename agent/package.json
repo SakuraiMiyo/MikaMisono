@@ -1,0 +1,17 @@
+{
+  "name": "mika-chat-memory",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "圣园未花 persona 项目：知识库 + 长期记忆的向量化检索与摘要管理",
+  "scripts": {
+    "index": "node tools/index.mjs",
+    "search": "node tools/search.mjs",
+    "digest": "node tools/digest.mjs",
+    "rebuild": "node tools/index.mjs --rebuild",
+    "auto": "node tools/auto.mjs"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^3.0.0"
+  }
+}

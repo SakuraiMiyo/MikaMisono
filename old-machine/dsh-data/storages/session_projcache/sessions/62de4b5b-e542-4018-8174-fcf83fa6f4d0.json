@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786581053,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 61675,
+        "val": {
+          "turns": 1,
+          "steps": 19,
+          "llmMs": 475215,
+          "toolMs": 11256,
+          "ttftMs": 19378,
+          "ttftSteps": 19,
+          "decodeMs": 455837,
+          "decodeTokens": 62398,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 61675,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 61675,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 61675,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 74462,
+            "outputTokens": 62398,
+            "cacheReadTokens": 1452544,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 19,
+            "buckets": {
+              "uncachedInputTokens": 207,
+              "outputTokens": 680,
+              "cacheReadTokens": 113792,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 61675,
+        "val": {
+          "surfaceTokens": 75593,
+          "contextWindow": 1000000,
+          "pressureTokens": 113999,
+          "sampledSurfaceTokens": 75208
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 61675,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 75593
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 61675,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 487240
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 61675,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写12章 EEPROM与器件入门",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 61675,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 61675,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 61675,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 61675,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786581176
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 61675,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 61675,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 61675,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789819571754,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\STC"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 54041,
+        "val": {
+          "turns": 1,
+          "steps": 21,
+          "llmMs": 249564,
+          "toolMs": 1287,
+          "ttftMs": 28382,
+          "ttftSteps": 21,
+          "decodeMs": 221182,
+          "decodeTokens": 54706,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 54041,
+        "val": "你是嵌入式教程作者。任务："
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 54041,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 54041,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 69352,
+            "outputTokens": 54706,
+            "cacheReadTokens": 1392256,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 21,
+            "buckets": {
+              "uncachedInputTokens": 169,
+              "outputTokens": 1043,
+              "cacheReadTokens": 117120,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 54041,
+        "val": {
+          "surfaceTokens": 63428,
+          "contextWindow": 1000000,
+          "pressureTokens": 117289,
+          "sampledSurfaceTokens": 62981
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 54041,
+        "val": {
+          "systemTokens": 3097,
+          "toolsTokens": 7020,
+          "messageTokens": 63428
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 54041,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 251748
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 54041,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Write chapters 06 and 08",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 54041,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 54041,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 54041,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 54041,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789819571963
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 54041,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 54041,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 54041,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

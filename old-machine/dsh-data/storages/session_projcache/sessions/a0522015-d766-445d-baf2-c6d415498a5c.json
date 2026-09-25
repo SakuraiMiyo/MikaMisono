@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786533552,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 43773,
+        "val": {
+          "turns": 1,
+          "steps": 20,
+          "llmMs": 347785,
+          "toolMs": 12858,
+          "ttftMs": 18735,
+          "ttftSteps": 20,
+          "decodeMs": 329050,
+          "decodeTokens": 44763,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 43773,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 43773,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 43773,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 71513,
+            "outputTokens": 44763,
+            "cacheReadTokens": 1387776,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 20,
+            "buckets": {
+              "uncachedInputTokens": 104,
+              "outputTokens": 544,
+              "cacheReadTokens": 97408,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 43773,
+        "val": {
+          "surfaceTokens": 56713,
+          "contextWindow": 1000000,
+          "pressureTokens": 97512,
+          "sampledSurfaceTokens": 56462
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 43773,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 56713
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 43773,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 361444
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 43773,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写02章 环境搭建与烧录",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 43773,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 43773,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 43773,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 43773,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786533699
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 43773,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 43773,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 43773,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

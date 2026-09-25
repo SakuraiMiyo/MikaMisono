@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788929442497,
+      "cwd": "D:\\OneDrive\\碧蓝档案\\总力战\\BAMT"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 32348,
+        "val": {
+          "turns": 1,
+          "steps": 17,
+          "llmMs": 130105,
+          "toolMs": 15193,
+          "ttftMs": 10796,
+          "ttftSteps": 17,
+          "decodeMs": 119309,
+          "decodeTokens": 32944,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 32348,
+        "val": "你是一名资深 React / TypeScript"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 32348,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 32348,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 98842,
+            "outputTokens": 32944,
+            "cacheReadTokens": 1182720,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 17,
+            "buckets": {
+              "uncachedInputTokens": 3275,
+              "outputTokens": 1190,
+              "cacheReadTokens": 125184,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 32348,
+        "val": {
+          "surfaceTokens": 91768,
+          "contextWindow": 1000000,
+          "pressureTokens": 128459,
+          "sampledSurfaceTokens": 91120
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 32348,
+        "val": {
+          "systemTokens": 3097,
+          "toolsTokens": 7020,
+          "messageTokens": 91768
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 32348,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 145749
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 32348,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "审查巨型前端组件",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 32348,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 32348,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 32348,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4.1-flash-expires-on-0910",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 32348,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788929442604
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 32348,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 32348,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 32348,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

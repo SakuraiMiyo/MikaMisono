@@ -1,0 +1,168 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788786565129,
+      "cwd": "D:\\OneDrive\\ObsidianNotes"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 71773,
+        "val": {
+          "turns": 1,
+          "steps": 22,
+          "llmMs": 512538,
+          "toolMs": 4693,
+          "ttftMs": 21466,
+          "ttftSteps": 22,
+          "decodeMs": 491072,
+          "decodeTokens": 72604,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 71773,
+        "val": "你是一名嵌入式学习资料编写"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 71773,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 71773,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 55867,
+            "outputTokens": 72604,
+            "cacheReadTokens": 1578496,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 22,
+            "buckets": {
+              "uncachedInputTokens": 521,
+              "outputTokens": 559,
+              "cacheReadTokens": 105856,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 71773,
+        "val": {
+          "surfaceTokens": 61647,
+          "contextWindow": 1000000,
+          "pressureTokens": 106377,
+          "sampledSurfaceTokens": 61293
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 71773,
+        "val": {
+          "systemTokens": 3093,
+          "toolsTokens": 7020,
+          "messageTokens": 61647
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 71773,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 518379
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 71773,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "写09章 外部中断详解",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 71773,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 71773,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 71773,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 71773,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788786565319
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 71773,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 71773,
+        "val": [
+          {
+            "content": "只读核对 E06/E11 源码与 zf_driver_exti.h（GBK, -Encoding oem）",
+            "status": "in_progress"
+          },
+          {
+            "content": "查看笔记库 TC264 目录结构与既有章节风格",
+            "status": "pending"
+          },
+          {
+            "content": "撰写 09-外部中断入门.md（300~450 行）",
+            "status": "pending"
+          },
+          {
+            "content": "校验行数与 Wikilink/出处要求后汇报",
+            "status": "pending"
+          }
+        ]
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 71773,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

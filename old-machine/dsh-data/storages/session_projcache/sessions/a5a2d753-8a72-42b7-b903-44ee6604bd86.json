@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1789819054934,
+      "cwd": "D:\\OneDrive\\ComputerLearning\\STC"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 32564,
+        "val": {
+          "turns": 1,
+          "steps": 20,
+          "llmMs": 131286,
+          "toolMs": 13559,
+          "ttftMs": 15576,
+          "ttftSteps": 20,
+          "decodeMs": 115710,
+          "decodeTokens": 33480,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 32564,
+        "val": "你是嵌入式 C 代码分析助手。"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 32564,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 32564,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 72081,
+            "outputTokens": 33480,
+            "cacheReadTokens": 941184,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 20,
+            "buckets": {
+              "uncachedInputTokens": 476,
+              "outputTokens": 301,
+              "cacheReadTokens": 92800,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 32564,
+        "val": {
+          "surfaceTokens": 51554,
+          "contextWindow": 1000000,
+          "pressureTokens": 93276,
+          "sampledSurfaceTokens": 51394
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 32564,
+        "val": {
+          "systemTokens": 3097,
+          "toolsTokens": 7020,
+          "messageTokens": 51554
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 32564,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 145278
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 32564,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "Coreboard demos notes",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 32564,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 32564,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 32564,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4-flash-vision-exp",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 32564,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1789819055084
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 32564,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 32564,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 32564,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}

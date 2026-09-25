@@ -1,0 +1,151 @@
+{
+  "version": 4,
+  "record": {
+    "identity": {
+      "createdAt": 1788929442496,
+      "cwd": "D:\\OneDrive\\碧蓝档案\\总力战\\BAMT"
+    },
+    "rows": {
+      "sessionStats": {
+        "ver": 1,
+        "seq": 37747,
+        "val": {
+          "turns": 1,
+          "steps": 9,
+          "llmMs": 148771,
+          "toolMs": 1190,
+          "ttftMs": 3835,
+          "ttftSteps": 9,
+          "decodeMs": 144936,
+          "decodeTokens": 38138,
+          "lastTurn": 1,
+          "openStep": null,
+          "pendingCalls": {}
+        }
+      },
+      "title": {
+        "ver": 1,
+        "seq": 37747,
+        "val": "你是一名资深 Rust / Windows 系统"
+      },
+      "goal": {
+        "ver": 4,
+        "seq": 37747,
+        "val": null
+      },
+      "tokenUsage": {
+        "ver": 2,
+        "seq": 37747,
+        "val": {
+          "totals": {
+            "uncachedInputTokens": 42497,
+            "outputTokens": 38138,
+            "cacheReadTokens": 345728,
+            "cacheWriteTokens": 0
+          },
+          "last": {
+            "turn": 1,
+            "step": 9,
+            "buckets": {
+              "uncachedInputTokens": 287,
+              "outputTokens": 761,
+              "cacheReadTokens": 81920,
+              "cacheWriteTokens": 0
+            }
+          }
+        }
+      },
+      "contextPressure": {
+        "ver": 4,
+        "seq": 37747,
+        "val": {
+          "surfaceTokens": 58971,
+          "contextWindow": 1000000,
+          "pressureTokens": 82207,
+          "sampledSurfaceTokens": 58521
+        }
+      },
+      "contextBreakdown": {
+        "ver": 2,
+        "seq": 37747,
+        "val": {
+          "systemTokens": 3097,
+          "toolsTokens": 7020,
+          "messageTokens": 58971
+        }
+      },
+      "subagentTiming": {
+        "ver": 2,
+        "seq": 37747,
+        "val": {
+          "descriptorSeen": true,
+          "settledMs": 150253
+        }
+      },
+      "subagent": {
+        "ver": 2,
+        "seq": 37747,
+        "val": {
+          "identity": {
+            "mode": "continuable",
+            "label": "审查 Rust 后端",
+            "seq": 0
+          }
+        }
+      },
+      "agentPreset": {
+        "ver": 1,
+        "seq": 37747,
+        "val": "mika"
+      },
+      "permissions": {
+        "ver": 1,
+        "seq": 37747,
+        "val": {
+          "preset": null,
+          "sandbox": "workspace-write",
+          "approval": "never"
+        }
+      },
+      "modelSelection": {
+        "ver": 2,
+        "seq": 37747,
+        "val": {
+          "lastUsed": {
+            "provider": "deepseek-official",
+            "model": "deepseek-v4.1-flash-expires-on-0910",
+            "reasoningEffort": "high"
+          },
+          "pending": null
+        }
+      },
+      "sessionListMetadata": {
+        "ver": 1,
+        "seq": 37747,
+        "val": {
+          "blank": false,
+          "lastPromptAt": 1788929442611
+        }
+      },
+      "imageLimits": {
+        "ver": 1,
+        "seq": 37747,
+        "val": null
+      },
+      "todos": {
+        "ver": 2,
+        "seq": 37747,
+        "val": null
+      },
+      "plan": {
+        "ver": 2,
+        "seq": 37747,
+        "val": {
+          "active": false,
+          "wanted": null,
+          "running": null
+        }
+      }
+    }
+  }
+}
