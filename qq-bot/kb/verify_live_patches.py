@@ -83,6 +83,7 @@ PATCHES = [
     (RUNNER, "中间步骤正文封锁（治思考泄漏）", "带工具调用的中间步骤不产出正文"),
     (STAGE, "分段回复括号原子化", "split_text_respecting_brackets"),
     (UPDATE_SVC, "版本锁定（封死核心更新入口）", "版本已锁定在 v4.27.3"),
+    (MAIN_AGENT, "此刻状态+时间线注入（emotion/timeline）", "_render_state_and_timeline_block"),
 ]
 
 for p, label, marker in PATCHES:

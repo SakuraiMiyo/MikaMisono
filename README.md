@@ -487,7 +487,18 @@ ${card.summary}
 - 行首必须是 `- YYYY-MM-DD `，然后是**和卡片完全一致的 `title`**，
   然后是全角竖线 `｜`，然后是复述。
 
-### 6.5 改写的硬约束（**改记忆之前必读**）
+### 6.5 时间线与情绪（2026-09-26 新增，配合补丁 #11）
+
+| 文件 | 是什么 | 谁写 | 谁读 |
+|---|---|---|---|
+| `agent\memory\timeline.json` | **生活编年史**：实体-属性-值-有效期（valid_from/valid_to）。只收项目生活线（6/28 起）；原作弧线在 KB 里不重复 | 老师/工程师手工维护，改动走 git | 补丁 #11 每轮取「当前有效」事实注入；过期事实自动滤掉 |
+| `agent\memory\emotion_state.json` | **此刻心情**：valence(-5~5)/energy(0-100)/对老师温度/情境标签/事件日志 | 她自己（写完日记后按 mika-diary skill 的协议更新） | 补丁 #11 每轮注入「你此刻的状态」 |
+
+- 改完任一文件跑 `qq-bot\kb\check_timeline.py`（结构校验 + 身份防线破绽词扫描）。
+- 设计取向：**插件不启用**（private_companion 的动态情绪/主动消息体系与现有人格工程互扰），
+  用轻量文件 + 每轮注入达到同样效果，且数据在项目里、走 git、可校验。
+
+### 6.6 改写的硬约束（**改记忆之前必读**）
 
 改写记忆的风险不是"不好看"，是**悄悄改掉事实**。所以有四个校验器：
 
@@ -744,6 +755,11 @@ $BAK = 'C:\OneDrive\MikaMisono\_archive-20260924\cards-before-voicefix-20260926-
 | 8 | `core\agent\runners\tool_loop_agent_runner.py` | **带工具调用的中间步骤不再 yield 正文链**（只留最终答复；`send_message_to_user` 工具直发不受影响） | deepseek 在工具循环里把自言自语写进 completion text，非流式路径下每步正文都被逐条发到聊天平台（9/23 事故：`Let me poll again.` 等 9 条英文碎片进 QQ，同一句在历史里同时存成 think 块和 text 块）。**提示词层压不住**（人格禁令/EXTRA_PROMPT 都试过，模型无视），只能机械拦截 | `qq-bot\kb\patch_intermediate_text_block.py` |
 | 9 | `core\pipeline\result_decorate\stage.py` | 分段回复**括号原子化**：完整闭合的 `（…）`（含尾随 `~/…`）摘出作独立分段，括号内句读不参与断句 | 她在括号内心活动里写句号（`（停，做。）`），旧正则把它拆成「`（停，做。`」+「`）`」两条，第二条以半括号开头；半截括号还会被 TTS 旁白识别漏掉、当台词念出来 | `qq-bot\kb\patch_bracket_segmentation.py` |
 | 10 | `dashboard\services\update_service.py` | **版本锁定**：`update_project` 开头无条件拒绝（`version_locked`），WebUI 的「更新核心」彻底封死 | 2026-09-26 老师拍板固定 v4.27.3——10 个补丁都建立在这个版本上，升级即全部静默失效。上游那道 `ASTRBOT_DESKTOP_MANAGED` 门依赖启动方式（手动脚本启动时是开的），所以加了无条件硬拒绝。`update_dashboard`（面板修复）和 `pip/install`（插件依赖）**有意保留** | `qq-bot\kb\patch_lock_version.py` |
+| 11 | `core\astr_main_agent.py` | **「此时此刻」注入**：Persona 之后每轮追加 `emotion_state.json`（心情/精力/对老师温度）+ `timeline.json` 的**当前有效**事实（过期的滤掉）；文件缺失/损坏则静默跳过 | 借鉴 Zep/Graphiti（事实有效期）与情绪状态引擎（2026-09-26 老师拍板）。她的记忆没有有效期，检索命中旧事实会被当现状说（如已换新的旧电脑配置）；情绪只活在单轮里。private_companion 插件虽有动态情绪但**已停用且不启用**（会引入主动消息编排等干扰）。渲染函数 `_render_state_and_timeline_block`，每轮现读磁盘，她更新情绪后下一轮即生效 | `qq-bot\kb\patch_context_timeline.py` |
+
+> ⚠️ **补丁 #11 的数据文件**：`agent\memory\timeline.json`（23 条生活事实，人工维护、改动走 git、
+> 她只读不写）和 `agent\memory\emotion_state.json`（她在写完日记后按 mika-diary skill 里的协议更新）。
+> **改完任何一个必须跑 `qq-bot\kb\check_timeline.py`**——校验器会抓 AI 破绽词、过期冲突、字段缺失。
 
 > ⚠️ **版本锁定还剩一条补丁管不到的路**：`astrbot-desktop-tauri.exe` 自身的更新弹窗
 > （逻辑编译在 exe 里）。**桌面应用里看到"新版本"提示时不要点更新**——点了整个安装目录会被换掉。
