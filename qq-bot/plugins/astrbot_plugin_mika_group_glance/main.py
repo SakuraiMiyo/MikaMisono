@@ -125,6 +125,22 @@ class MikaGroupGlancePlugin(Star):
             return qs <= now < qe
         return now >= qs or now < qe
 
+    def _group_llm_blocked(self, group_id: str) -> bool:
+        """尊重 group_llm_guard 的按群禁用名单（每条消息现读，随面板改动即时跟随）。
+
+        guard 拦得住 request_llm（on_llm_request 钩子），拦不住本插件的
+        判断调用（provider.text_chat 不走管线）——所以在采样前自己挡掉，
+        避免在被禁群里白白消耗判断 token。
+        """
+        try:
+            cfg_path = Path("data") / "config" / "astrbot_plugin_group_llm_guard_config.json"
+            if not cfg_path.exists():
+                return False
+            cfg = json.loads(cfg_path.read_text(encoding="utf-8-sig"))
+            return str(group_id) in [str(g) for g in cfg.get("disabled_group_ids", [])]
+        except Exception:
+            return False
+
     # ── 状态入口：她的任何 LLM 回复 = 进入/维持积极状态 ───────────────
     @filter.on_llm_response()
     async def on_llm_response(self, event: AstrMessageEvent, response):
@@ -180,6 +196,8 @@ class MikaGroupGlancePlugin(Star):
 
         if self._in_quiet_hours():
             return
+        if self._group_llm_blocked(group_id):
+            return  # 该群已被 group_llm_guard 禁用 LLM：不看、不判断、不回
 
         # ── 分支：积极状态 → 高概率接话；idle → 低概率看一眼 ──
         if eng >= ENGAGED_THRESHOLD:
