@@ -256,6 +256,10 @@ class MikaGroupGlancePlugin(Star):
         if eng < ENGAGED_THRESHOLD:
             self._no_reply_streak = 0
         self._daily_replied[group_id] = self._daily_replied.get(group_id, 0) + 1
+        # 防双发：立即占位 last_reply。之前只靠 on_llm_response 更新，
+        # 并发到达的两条消息会在对方完成前都通过防连发检查 → 同题双发。
+        st = self._st(group_id)
+        st["last_reply"] = time.monotonic()
         hook = str(verdict.get("hook", "") or "")
         engaged_now = eng >= ENGAGED_THRESHOLD
         logger.info(
