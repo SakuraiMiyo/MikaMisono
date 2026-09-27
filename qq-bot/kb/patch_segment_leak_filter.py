@@ -65,23 +65,29 @@ _THINK_LEAK_PHRASES = re.compile(
     r"this seems|i need to|mode indicator|as mika would|brainstorm)",
     re.IGNORECASE,
 )
-_THINK_LEAK_WORD = re.compile(r"[A-Za-z]+")
+_THINK_LEAK_STRIP = "，。！？…～~*、（）()【】[]「」『』/::;；,.\\\"'—－-+#◆／｜|"
 
 
 def has_thinking_leak(text: str) -> bool:
-    """判断一段文本是否疑似思考流泄漏（英文计划/分析渗进正文）。"""
+    """判断一段文本是否疑似思考流泄漏（英文计划/分析渗进正文）。
+
+    2026-09-27 修正误杀：只有「剥掉标点后纯 ASCII 字母」的 token 才计入
+    英文游程；中英混合 token（如 改自【blender】stage01／健胃消食片）直接
+    重置游程——否则场景署名（Parallel lines + blender stage01）会被误判。
+    """
     if not text:
         return False
     if _THINK_LEAK_PHRASES.search(text):
         return True
     run = best = 0
     for token in re.split(r"\\s+", text):
-        words = _THINK_LEAK_WORD.findall(token)
-        if words and all(w.lower() not in _THINK_LEAK_TECH for w in words):
-            run += len(words)
-            best = max(best, run)
-        else:
-            run = 0
+        core = token.strip(_THINK_LEAK_STRIP)
+        if core and core.isascii() and core.isalpha():
+            if core.lower() not in _THINK_LEAK_TECH:
+                run += 1
+                best = max(best, run)
+                continue
+        run = 0
     return best >= 3
 '''
 
