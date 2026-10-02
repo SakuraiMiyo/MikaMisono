@@ -399,7 +399,9 @@ $PY = 'C:\SoftWare\Astrbot\backend\python\python.exe'
 
 > ⚠️ **`--sync-diary` 是差分的**。曾经踩过：41 篇日记在磁盘上，知识库里只有 39 篇，
 > 因为最后两篇是上一次全量同步之后写的，而差分同步没抓到。
-> **现在有一个计划任务 `MikaDiaryKBSync`，每 30 分钟跑一次 `--sync-diary`。**
+> **计划任务 `MikaDiaryKBSync`：每天 01:00 经 `run_sync_hidden.vbs`（隐藏窗口）跑一次 `--sync-diary`。**
+  > 2026-09-27 应老师要求从「每 30 分钟」改为「每天 01:00」，并改为 VBS+BAT 隐藏链路
+  >（直接跑 python.exe 会弹终端框，打游戏时被打扰）。排查日志：`qq-bot/kb/diary_sync.log`。
 
 > ⚠️ **`cards/` 和 `summaries/` 不在 QQ 知识库里**，只有 `agent/memory/diary/` 在里面。
 > 也就是说记忆卡和滚动摘要只在 DSH 链路生效。
